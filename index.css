@@ -38,7 +38,7 @@ h1
 header nav
 {
 	float: right;
-	padding-top: 30px;
+	padding-top: 40px;
 	margin: 0px;
 
 }
@@ -67,25 +67,31 @@ header nav ul li
   visibility: hidden;
   margin-top: 5px;
   width: 140px;
-  background-color: white;
-  color: black;
 
 }
-.a li a
+.a li
 {
-	color:black;
+	background-color: white;
+	padding-top: 10px;
+	background-size: 120%;
+	
+	
 }
-
+#toggle .a li a
+{
+	color:black; 
+}
+#toggle .a li:hover a
+{
+	color: orange;
+    
+}
 #toggle ul li:hover ul
 {
     visibility: visible;
     
 }
-#toggle ul li ul li
-{
-    padding-top: 10px;
-	color: red;	
-}
+
 
 /*first*/
 
@@ -166,29 +172,25 @@ strong
 
 /*main*/
 
-.main
-{
-	background-color: #efefef;
-	padding: 130px 0;
-	
-}
 .me h2
 {
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: center;
     font-size: 2.5em;
 	color: black;
 	margin-bottom: 20px;
 }
-.main article
+article
 {
 	width: 300px;
 	height: 270px;
 	float: left;
 	display: inline-block;
 	border-radius: 10px;
-	padding-left: 23px;
-	margin-left: 60px;
+	padding-left: 10px;
+	margin-left: 80px;
+	margin-top: 15px;
+	
 }
 
 .we
@@ -198,23 +200,22 @@ strong
 	padding: 20px;
 	border-radius: 10px 0 0 10px;
 	text-align: center;
+	background: lightblue;
 }
 article h3
 {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(248, 244, 244);
     padding-bottom: 20px;
     text-transform: uppercase;
     margin-bottom: 25px;
     text-align: center;
+	margin-top: 50px;
 }
-.main article .we p
+.we p
 {
 	text-align: center;
-	padding-top: 30px;
-}
-.we h3 p a
-{
-    margin-top: 20px;
+	padding-bottom: 30px;
+
 }
 
 .button-2 
@@ -225,6 +226,7 @@ article h3
 	border-radius: 3px;
 	padding-bottom: 10px;
 	margin-top: 15px;
+	
 }
 .button-2:hover
 {
@@ -236,8 +238,123 @@ article h3
 
 #fir h2
 {
-	margin-top: 30px;
+	margin-top: 77px;
     text-align: center;
     font-size: 2.5em;
 	color: black;
+	margin-bottom: 35px;
+}
+.grille
+{
+	max-width: 1300px;
+	width: 80%;
+	height: auto;
+	margin: 30px 100px 40px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 400px);
+	justify-content: center;
+	grid-gap: 10px;
+}
+.grid-item
+{
+	width: 300px;
+	height: 300px; 
+	background: #333;
+}
+
+/*slider
+
+.lui h2
+{
+	margin-top: 77px;
+    text-align: center;
+    font-size: 2.5em;
+	color: black;
+	margin-bottom: 35px;
+
+}
+.slider
+{
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	margin: 100px 0 50px 50px;
+	
+
+}
+.slides
+{
+	width: calc(300px *3);
+}
+.slide
+{
+    float: left ;
+	animation: glisse 10s infinite;
+}
+@keyframes glisse
+{
+	0%{
+		transform: translateX(0);
+	}
+	10%{
+		transform: translateX(0);
+	}
+	33%{
+		transform: translateX(-500px);
+	}
+	43%{
+		transform: translateX(-500px);
+	}
+	66%{
+		transform: translateX(-1000px);
+	}
+	70%{
+		transform: translateX(-1000px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}*/
+
+/*marquee*/
+ 
+.lui h2
+{
+	margin-top: 7px;
+    text-align: center;
+    font-size: 2.5em;
+	color: black;
+	margin-bottom: 35px;
+}
+.marquee
+{
+	margin-top: 30px;
+}
+.slide
+{
+	float: left;
+	
+}
+
+.lou h2
+{
+	margin-top: 15px;
+    text-align: center;
+    font-size: 2.5em;
+	color: black;
+	margin-bottom: 35px;
+}
+/*footer*/
+.end
+{
+	height: 100px;
+	background-color: lightblue;
+	background-size: cover;
+}
+.end .logos
+{
+	float: left;
+	padding-top: 25px;
+	padding-left: 600px;
+	padding-right: 20px;
 }
