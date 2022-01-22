@@ -2,6 +2,7 @@
 {
 	margin: 0;
 	padding: 0;
+	font-family: Lucida Sans;
 }
 
 /*header*/
@@ -13,99 +14,94 @@
 }
 header
 {
-	background-color: black;
+	background-color: lightblue;
 	background-size: cover;
 	width: 100%;
 	height: 100px;
 	position: fixed;
-	opacity: 0.8;
+
 	
 }
 
 h1
 {
-	color: white;
+	color: rgb(255, 255, 255);
 	float: left;
 	text-transform: uppercase;
-	font-family: sans-serif;
 	padding-left: 150px;
 	padding-top: 30px;
+}
+.se:hover
+{
+	color: orange;
 }
 header nav
 {
 	float: right;
 	padding-top: 30px;
 	margin: 0px;
+
+}
+#toggle li a:hover
+{
+	color: orange;
 }
 header nav ul li
 {
 	float: left;
 	display: inline-block;
-	list-style: none;
-    position: relative;
+	list-style-type: none;
 }
 #toggle ul li a
 {
 	text-transform: uppercase;
 	font-weight:  bold;
-	margin-right: 70px;
+	margin-right: 90px;
 	text-decoration: none;
-	color: rgb(245, 244, 252);
+	color: white;
 
 }
-.first
+#toggle .a
 {
-	background-image: url("ja.jpg") ;
-	height: 700px;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#toggle ul ul
-{
-  position: absolute;
   top: 20px;
   visibility: hidden;
-  border-radius: 10px;
   margin-top: 5px;
   width: 140px;
+  background-color: white;
+  color: black;
 
 }
+.a li a
+{
+	color:black;
+}
+
 #toggle ul li:hover ul
 {
     visibility: visible;
-    background-color: rgb(115, 9, 236);
+    
 }
 #toggle ul li ul li
 {
     padding-top: 10px;
-	color: rgb(64, 11, 255);
-	
+	color: red;	
 }
 
-#toggle ul ul li a:hover
-{
-    color: rgb(248, 11, 11);
-	
-	
-}
+/*first*/
 
 .first
 {
     padding-top: 0px;
-	
-	
+	background-image: url("jk.jpg");
+	height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-
-
-h2
+.first h2
 {
     font-size: 3.5em;
     text-align: center;
-	padding-top: 200px;
-	
-	
-
+	padding-top: 220px;
 }
 .first p 
 {
@@ -164,6 +160,84 @@ strong
 	}
 	input 
 	{
-		text-align: center;
+		
 	}
+}
+
+/*main*/
+
+.main
+{
+	background-color: #efefef;
+	padding: 130px 0;
+	
+}
+.me h2
+{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2.5em;
+	color: black;
+	margin-bottom: 20px;
+}
+.main article
+{
+	width: 300px;
+	height: 270px;
+	float: left;
+	display: inline-block;
+	border-radius: 10px;
+	padding-left: 23px;
+	margin-left: 60px;
+}
+
+.we
+{
+	height: 100%;
+	width: 190px;
+	padding: 20px;
+	border-radius: 10px 0 0 10px;
+	text-align: center;
+}
+article h3
+{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.main article .we p
+{
+	text-align: center;
+	padding-top: 30px;
+}
+.we h3 p a
+{
+    margin-top: 20px;
+}
+
+.button-2 
+{
+	color: #fff;
+	background-color: #ff7a00;
+	padding: 6px 20px;
+	border-radius: 3px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+}
+.button-2:hover
+{
+	color: #fff;
+	background-color: #02b8dd;
+	
+}
+/*thirst*/
+
+#fir h2
+{
+	margin-top: 30px;
+    text-align: center;
+    font-size: 2.5em;
+	color: black;
 }
