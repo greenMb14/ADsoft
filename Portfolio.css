@@ -59,8 +59,11 @@ ul{
     margin-top: -4%;
 }
 header{
+    width: 100%;
     height: 90px;
     background-color: lightblue;
+    position: fixed;
+    
 }
 #log{
     text-align: center;
