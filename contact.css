@@ -89,6 +89,12 @@ header nav ul li
     visibility: visible;
     
 }
+body
+{
+    background-image: url("tru.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /*main*/
 
@@ -96,6 +102,7 @@ header nav ul li
 {
     display: flex;
     align-items: center;
+
 }
 .child1
 {
@@ -104,13 +111,14 @@ header nav ul li
 }
 .child1 h1
 {
-    color: black;
+    color: white;
     padding-bottom: 15px;
 }
 .child1 .dessous
 {
     padding-right: 300px;
     margin-left: 100px;
+    color: white;
 
 }
 .child2
@@ -137,7 +145,7 @@ header nav ul li
 {
     width: 100%;
     height: 50px;
-    background-color: lightseagreen;
+    background-color: rgb(101, 136, 243);
     font-size: 1.3em;
 }
 
@@ -150,7 +158,7 @@ strong
 	margin-top: 25px;
     text-align: center;
     font-size: 2.5em;
-	color: black;
+	color: white;
     margin-bottom: 35px;
 }
 /*footer*/
