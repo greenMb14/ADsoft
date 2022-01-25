@@ -22,7 +22,7 @@ ul{
     
 }
 .menuderoulant li a:hover{
-    color: orange;
+    color: black;
 }
 #sousmenu{
     display: none;
@@ -33,7 +33,7 @@ ul{
     position: absolute;
 }
 #sousmenu li:hover{
-    background-color: gainsboro;
+    background-color:  rgb(175, 174, 174);
     width: 80%;
     
 }
@@ -41,7 +41,7 @@ ul{
     color: rgb(85, 84, 84);
 }
 #sousmenu li a:hover{
-    color: orange;
+    color: lightblue;
     
 }
 #menuprincipal:hover #sousmenu{
@@ -63,7 +63,7 @@ header{
     height: 90px;
     background-color: lightblue;
     position: fixed;
-    margin-top: -13.4%;
+    
 }
 
 @media screen and (max-width:1350px){
@@ -134,7 +134,7 @@ footer
     height: 400px;
     border: lightblue solid 5px;
     background: url(images/J0ypLxCKzjX12HIF.jpg);
-    margin: 180px auto;
+    margin: 80px auto;
     animation: slide 20s infinite;
 }
 @keyframes slide {

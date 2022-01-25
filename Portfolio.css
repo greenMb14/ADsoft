@@ -22,7 +22,7 @@ ul{
     
 }
 .menuderoulant li a:hover{
-    color: orange;
+    color: black;
 }
 #sousmenu{
     display: none;
@@ -33,7 +33,7 @@ ul{
     position: absolute;
 }
 #sousmenu li:hover{
-    background-color: gainsboro;
+    background-color: rgb(175, 174, 174);
     width: 80%;
     
 }
@@ -41,7 +41,7 @@ ul{
     color: rgb(85, 84, 84);
 }
 #sousmenu li a:hover{
-    color: orange;
+    color: lightblue;
     
 }
 #menuprincipal:hover #sousmenu{
@@ -187,44 +187,11 @@ header{
     }
 }
 .icon{
-    margin-left: 28%;    
-    
+    width: 70%;
+    height: auto;
+    margin: 0px auto 230px auto;
+    border: hotpink solid 5px;
+    background: url("images/abcde.png") no-repeat;
+    background-size: contain;
 }
-footer
-{
-    background-color: lightblue;
-    margin-top: 5%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
