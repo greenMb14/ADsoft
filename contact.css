@@ -31,7 +31,7 @@ h1
 }
 .se:hover
 {
-	color: orange;
+	color: black;
 }
 header nav
 {
@@ -40,51 +40,50 @@ header nav
 	margin: 0px;
 
 }
-#toggle li a:hover
+header nav li a:hover
 {
-	color: orange;
+	color: black;
 }
-header nav ul li
+nav .b li
 {
 	float: left;
 	display: inline-block;
-	list-style-type: none;
+	position: relative;
+	
 }
-#toggle ul li a
+nav .b li a
 {
 	text-transform: uppercase;
 	font-weight:  bold;
 	margin-right: 90px;
 	text-decoration: none;
 	color: white;
-
 }
-#toggle .a
-{
-  top: 20px;
-  visibility: hidden;
-  margin-top: 5px;
-  width: 140px;
-
+nav .a
+{ 
+	top: 20px;
+	visibility: hidden;
+	margin-top: 5px;
+	width: 140px;
 }
 .a li
 {
 	background-color: white;
 	padding-top: 10px;
-	background-size: 120%;
-	
-	
+	width: 100%;
+	padding-left: 15px;
+	position: absolute;
 }
-#toggle .a li a
+nav .b .a li a
 {
-	color:black; 
+	color: rgb(85, 84, 84); 
 }
-#toggle .a li:hover a
+nav .a li:hover a
 {
-	color: orange;
+	color: lightblue;
     
 }
-#toggle ul li:hover ul
+nav .b li:hover .a
 {
     visibility: visible;
     
@@ -151,7 +150,7 @@ body
 
 strong
 {
-		color: red;
+		color: rgb(42, 90, 233);
 }
 .lou h2
 {
@@ -164,15 +163,17 @@ strong
 /*footer*/
 .end
 {
-	height: 100px;
-	background-color: lightblue;
+	height: 80px;
+	background-color: black;
 	background-size: cover;
+    margin-bottom: 0px;
+    opacity: 0.8;
 
 }
 .end .logos
 {
 	float: left;
 	padding-top: 25px;
-	padding-left: 800px;
+	padding-left: 700px;
 	padding-right: 20px;
 }
