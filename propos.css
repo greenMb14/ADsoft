@@ -80,7 +80,7 @@ nav .b .a li a
 }
 nav .a li:hover a
 {
-	color: lightblue;
+	color: rgb(88, 72, 161);
     
 }
 nav .b li:hover .a
