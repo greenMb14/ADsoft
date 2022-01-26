@@ -178,6 +178,7 @@ video{
     background: url("images/pay2.jfif") no-repeat;
     background-size: cover;
     width: 100%;
+    margin:;
 }
 .box{
     position: relative;
@@ -188,11 +189,11 @@ video{
 }
 @keyframes animate{
     0%{
-        transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(3000px) rotateY(0deg);
         position: relative;
     }
     100%{
-        transform: perspective(1000px) rotateY(360deg);
+        transform: perspective(3000px) rotateY(360deg);
         position: relative;
     }
 }
