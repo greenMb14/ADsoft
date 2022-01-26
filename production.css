@@ -132,20 +132,23 @@ footer
     min-height: 100vh;
     background: url("images/pay2.jfif") no-repeat;
     background-size: cover;
+    
 }
 .box{
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
+    animation: animate 20s cubic-bezier(0.68, -0.55, 0.265, -1.55) infinite;
 }
 @keyframes animate{
     0%{
         transform: perspective(1000px) rotateY(0deg);
+        position: relative;
     }
     100%{
         transform: perspective(1000px) rotateY(360deg);
+        position: relative;
     }
 }
 .box span{
@@ -156,7 +159,7 @@ footer
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+    transform: rotateY(calc(var(--i)*45deg)) translateX(300px);
     -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#fff8);
 }
 .box span img{

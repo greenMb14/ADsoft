@@ -143,11 +143,27 @@ header{
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 10px; 
+    
 }
 .grid-item{
     width: 300px;
     height: 300px;
-    background: url("images/illustration-carte-visite-elegante-vecteur-libre_1435-1228.jpg");
+
+}
+.grid-item:hover{
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    
+}
+@keyframes animate{
+    0%{
+        transform: perspective(2000px) rotateY(0deg);
+        
+    }
+    100%{
+        transform: perspective(2000px) rotateY(180deg);
+        
+    }
 }
 .h1-grille1{
     margin: 40px 0px;
@@ -180,6 +196,10 @@ header{
     height: 200px;
     background: red;
 }
+.grid-item1:hover, .grid-item2:hover, .grid-item3:hover{
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
 
 @media screen and (max-width: 900px){
     .grid-item3{
@@ -187,11 +207,12 @@ header{
     }
 }
 .icon{
-    width: 70%;
-    height: auto;
-    margin: 0px auto 230px auto;
-    border: hotpink solid 5px;
-    background: url("images/abcde.png") no-repeat;
-    background-size: contain;
+    margin: auto 43%;
+    padding-top: 5px;
+}
+footer{
+    background-color: black;
+    opacity: 0.7;
+    height: 50px;
 }
 

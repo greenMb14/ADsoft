@@ -135,20 +135,22 @@ footer
     border: lightblue solid 5px;
     background: url(images/hostinger-mutualise.jpg);
     margin: 80px auto;
-    animation: slide 20s infinite;
+    transform-style: preserve-3d;
+    animation: slide 20s linear infinite;
 }
 @keyframes slide {
     10%{
         background: url(images/hostinger-mutualise.jpg) no-repeat;
-        width: 100%;
+        width: 90%;
         background-size: cover;
+        transform: perspective(1000px) rotateX(0deg);
         
     }
     25%{
         background: url(images/hostinger-mutualise.jpg) no-repeat;
         width: 50%;
         background-size: cover;
-        
+        transform: perspective(1000px) rotateX(180deg);
     }
     35%{
         background: url(images/hostinger-pricing-jun-21.jpg) no-repeat;
@@ -158,7 +160,7 @@ footer
     }
     50%{
         background: url(images/hostinger-pricing-jun-21.jpg)no-repeat;
-        width: 100%;
+        width: 90%;
         background-size: cover;
     }   
     60%{
@@ -169,7 +171,7 @@ footer
     }
     75%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
-        width: 100%;
+        width: 90%;
         background-size: cover;
         
     }
@@ -181,7 +183,7 @@ footer
     }
     100%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
-        width: 100%;
+        width: 90%;
         background-size: cover;
     }   
 }
