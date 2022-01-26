@@ -23,7 +23,7 @@ header
 
 h1
 {
-	color: rgb(255, 255, 255);
+	color: black;
 	float: left;
 	text-transform: uppercase;
 	padding-left: 150px;
@@ -31,7 +31,7 @@ h1
 }
 .se:hover
 {
-	color: black;
+	color: white;
 }
 
 .b
@@ -161,6 +161,7 @@ strong
     font-size: 2.5em;
 	color: white;
     margin-bottom: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*footer*/
 .end

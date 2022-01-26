@@ -23,7 +23,7 @@ header
 
 h1
 {
-	color: rgb(255, 255, 255);
+	color: black;
 	float: left;
 	text-transform: uppercase;
 	padding-left: 150px;
@@ -31,7 +31,7 @@ h1
 }
 .se:hover
 {
-	color: black;
+	color: white;
 }
 .b
 {
@@ -238,11 +238,12 @@ article h3
 
 #fir h2
 { 
-	margin-top: 48px;
+	margin-top: 80px;
     text-align: center;
     font-size: 2.5em;
 	color: black;
-	margin-bottom: 35px;
+	margin-bottom: 65px;
+	font-family: 'Times New Roman', Times, serif;
 }
 .grille
 {
@@ -260,7 +261,69 @@ article h3
 	width: 300px;
 	height: 300px; 
 	background: #333;
+	transition: 1s;
 }	
+.grid-item:hover
+{
+   transform: scale(1.2);
+   z-index: 2;
+   box-shadow: 2px 4px 4px rgb(139, 138, 138);
+}
+
+/*slid*/
+
+#slid
+{
+	margin-bottom0px;
+	margin-top: 80px;
+	margin-left: 180px ;
+	overflow: hidden;
+}
+#slid figure
+{
+	position:relative;
+	width: 80%;
+	margin: 0px;
+	left: 0px;
+	animation: 20s  infinite;
+	
+}
+#slid figure img
+{
+	width: 20%;
+	float: left;
+}
+@keyframes slider 
+{
+	0%{
+		left: 0%;
+	}
+	20%{
+		left: 0%;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+
 
 /*marquee*/
  
@@ -271,6 +334,7 @@ article h3
     font-size: 2.5em;
 	color: black;
 	margin-bottom: 35px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .marquee
 {
@@ -289,6 +353,7 @@ article h3
     font-size: 2.5em;
 	color: black;
 	margin-bottom: 35px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*footer*/
 .end
