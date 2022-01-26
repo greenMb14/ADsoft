@@ -33,61 +33,62 @@ h1
 {
 	color: black;
 }
-header nav
+.b
 {
-	float: right;
-	padding-top: 40px;
-	margin: 0px;
+    float: right;
+}
+.b li 
+{
+    display: inline-block;
+    list-style: none;
+    padding-top: 40px;
+    position: relative;
+    margin-right: 80px ;
+}
 
-}
-header nav li a:hover
+.b li a
 {
-	color: black;
-}
-nav .b li
-{
-	float: left;
-	display: inline-block;
-	position: relative;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+	font-weight:  bold;
+   
 	
 }
-nav .b li a
+.b li a:hover
 {
-	text-transform: uppercase;
-	font-weight:  bold;
-	margin-right: 90px;
-	text-decoration: none;
-	color: white;
-}
-nav .a
-{ 
-	top: 20px;
-	visibility: hidden;
-	margin-top: 5px;
-	width: 140px;
-}
-.a li
+     color: black;   
+} 
+.a
 {
-	background-color: white;
-	padding-top: 10px;
-	width: 100%;
-	padding-left: 15px;
-	position: absolute;
+    display: none;
+    width: 150px;
+    margin-left: -140%;
 }
-nav .b .a li a
+li:hover .a
+{
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+}
+.a li 
+{
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0px;
+}
+.b .a li a
 {
 	color: rgb(85, 84, 84); 
 }
-nav .a li:hover a
+.a li a:hover
 {
-	color: rgb(88, 72, 161);
-    
+    background-color: none;
+    color: royalblue;
 }
-nav .b li:hover .a
-{
-    visibility: visible;
-    
-}
+
 
 /*first*/
 
@@ -188,7 +189,8 @@ article
 	padding-left: 10px;
 	margin-left: 68px;
 	margin-top: 15px;
-	box-shadow: 0px 4px 4px 0px;
+	box-shadow: 0px 8px 8px 0px;
+	opacity: 0.8;
 }
 
 .we
@@ -196,7 +198,6 @@ article
 	height: 85%;
 	width: 190px;
 	padding: 20px;
-	border-radius: 10px;
 	text-align: center;
 	background: lightblue;
 
@@ -214,7 +215,6 @@ article h3
 {
 	text-align: center;
 	padding-bottom: 30px;
-
 }
 
 .button-2 
@@ -236,7 +236,7 @@ article h3
 /*thirst*/
 
 #fir h2
-{
+{ 
 	margin-top: 48px;
     text-align: center;
     font-size: 2.5em;

@@ -33,61 +33,63 @@ h1
 {
 	color: black;
 }
-header nav
-{
-	float: right;
-	padding-top: 40px;
-	margin: 0px;
 
-}
-header nav li a:hover
+.b
 {
-	color: black;
+    float: right;
 }
-nav .b li
+.b li 
 {
-	float: left;
-	display: inline-block;
-	position: relative;
-	
+    display: inline-block;
+    list-style: none;
+    padding-top: 40px;
+    position: relative;
+    margin-right: 80px;
 }
-nav .b li a
+
+.b li a
 {
-	text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 	font-weight:  bold;
-	margin-right: 90px;
-	text-decoration: none;
-	color: white;
+   
 }
-nav .a
-{ 
-	top: 20px;
-	visibility: hidden;
-	margin-top: 5px;
-	width: 140px;
-}
-.a li
+.b li a:hover
 {
-	background-color: white;
-	padding-top: 10px;
-	width: 100%;
-	padding-left: 15px;
-	position: absolute;
+     color: black;   
+} 
+.a
+{
+    display: none;
+    width: 150px;
+    margin-left: -140%;
 }
-nav .b .a li a
+li:hover .a
+{
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+}
+.a li 
+{
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.b .a li a
 {
 	color: rgb(85, 84, 84); 
 }
-nav .a li:hover a
+.a li a:hover
 {
-	color: rgb(88, 72, 161);
-    
+    background-color: none;
+    color: royalblue;
 }
-nav .b li:hover .a
-{
-    visibility: visible;
-    
-}
+
 body
 {
     background-image: url("tru.jpeg");
@@ -116,7 +118,7 @@ body
 .child1 .dessous
 {
     padding-right: 300px;
-    margin-left: 150px;
+    margin-left: 80px;
     color: white;
 
 }
