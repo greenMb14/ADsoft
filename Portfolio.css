@@ -54,9 +54,14 @@ ul{
 }
 .cc{
     margin-left: 70%;
-    color: white;
     font-size: 1.2em;
     margin-top: -4%;
+}
+.cc h1{
+    color: black;
+}
+.cc h1:hover{
+    color: white;
 }
 header{
     width: 100%;
@@ -65,21 +70,7 @@ header{
     position: fixed;
     
 }
-#log{
-    text-align: center;
-    font-size: 2em;
-    color: rgb(37, 36, 36);
-    margin: 5%;
-}
-.flyers{
-    margin: 22%;
-    margin-top: -1%;
-}
-.graphisme{
-    
-    margin-top: -2%;
-    
-}
+
 @media screen and (max-width:1350px){
     .bb4{
        
@@ -206,13 +197,45 @@ header{
         display: none;
     }
 }
-.icon{
-    margin: auto 43%;
-    padding-top: 5px;
-}
-footer{
-    background-color: black;
+.mon-footer{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
     opacity: 0.7;
-    height: 50px;
+}
+.icons{
+    display: flex;
+}
+.icons ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+}
+.icon a{
+    padding: 10px 20px;
+    
+}
+.sous-menu{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+.sous-menu ul{
+    display: flex;
+    margin-top: 10px;
+}
+.sous a{
+    text-decoration: none;
+    padding: 0px 25px;
+    font-size: 10px;
+    color: white;
+    
+}
+.sous a:hover{
+    color: lightblue;
 }
 
