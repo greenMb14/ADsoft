@@ -54,9 +54,14 @@ ul{
 }
 .cc{
     margin-left: 70%;
-    color: white;
     font-size: 1.2em;
     margin-top: -4%;
+}
+.cc h1{
+    color: black;
+}
+.cc h1:hover{
+    color: white;
 }
 header{
     width: 100%;
@@ -114,20 +119,9 @@ header{
 }
 .text p{
     padding: 30px 0px;
-    color: lightblue;
+    color: rgb(71, 71, 71);
     font-style: italic;
 }
-
-.icon{
-    margin-left: 28%;    
-    
-}
-footer
-{
-    background-color: lightblue;
-    margin-top: 5%;
-}
-
 
 .slider{
     width: 50%;
@@ -142,48 +136,82 @@ footer
         background: url(images/J0ypLxCKzjX12HIF.jpg) no-repeat;
         width: 90%;
         background-size: cover;
-        border: lightcoral solid 5px;
     }
     25%{
         background: url(images/social-media-hand.jpg) no-repeat;
         width: 50%;
         background-size: cover;
-        border: lightgreen solid 5px;
     }
     35%{
         background: url(images/default_og.png) no-repeat;
         width: 50%;
         background-size: cover;
-        border: lightseagreen solid 5px;
     }
     50%{
         background: url(images/default_og.png)no-repeat;
         width: 90%;
         background-size: cover;
-        border: magenta solid 5px;
     }
     60%{
         background: url(images/default_og.png)no-repeat;
         width: 50%;
         background-size: cover;
-        border: mediumspringgreen solid 5px;
     }
     75%{
         background: url(images/Social-Media-55-Digital-Marketing-Agency.jpg)no-repeat;
         width: 50%;
         background-size: cover;
-        border: olive solid 5px;
     }
     85%{
         background: url(images/Social-Media-55-Digital-Marketing-Agency.jpg)no-repeat;
         width: 90%;
         background-size: cover;
-        border: yellow solid 5px;
     }
     100%{
         background: url(images/Social-Media-55-Digital-Marketing-Agency.jpg)no-repeat;
         width: 50%;
         background-size: cover;
-        border: lightblue solid 5px;
     }
+}
+
+.mon-footer{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    opacity: 0.7;
+}
+.icons{
+    display: flex;
+}
+.icons ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+}
+.icon a{
+    padding: 10px 20px;
+    
+}
+.sous-menu{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+.sous-menu ul{
+    display: flex;
+    margin-top: 10px;
+}
+.sous a{
+    text-decoration: none;
+    padding: 0px 25px;
+    font-size: 10px;
+    color: white;
+    
+}
+.sous a:hover{
+    color: lightblue;
 }

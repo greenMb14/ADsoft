@@ -58,6 +58,12 @@ ul{
     font-size: 1.2em;
     margin-top: -4%;
 }
+.cc h1{
+    color: black;
+}
+.cc h1:hover{
+    color: white;
+}
 header{
     width: 100%;
     height: 90px;
@@ -114,20 +120,9 @@ header{
 }
 .text p{
     padding: 30px 0px;
-    color: lightblue;
+    color: rgb(71, 71, 71);
     font-style: italic;
 }
-
-.icon{
-    margin-left: 28%;    
-    
-}
-footer
-{
-    background-color: lightblue;
-    margin-top: 5%;
-}
-
 
 .slider{
     width: 50%;
@@ -188,3 +183,44 @@ footer
     }
 }
 
+.mon-footer{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    opacity: 0.7;
+}
+.icons{
+    display: flex;
+}
+.icons ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+}
+.icon a{
+    padding: 10px 20px;
+    
+}
+.sous-menu{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+.sous-menu ul{
+    display: flex;
+    margin-top: 10px;
+}
+.sous a{
+    text-decoration: none;
+    padding: 0px 25px;
+    font-size: 10px;
+    color: white;
+    
+}
+.sous a:hover{
+    color: lightblue;
+}
