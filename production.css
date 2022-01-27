@@ -177,7 +177,9 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background-color: black;
+    width: 100%;
+
 }
 
 
@@ -185,6 +187,7 @@ video{
     overflow: hidden;
     height: 500px;
     width: 80%;
+    margin-bottom: 20px;
 }
 .slider figure{
     position: relative;
