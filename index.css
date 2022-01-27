@@ -1,94 +1,111 @@
-*
-{
-	margin: 0;
-	padding: 0;
-	font-family: Lucida Sans;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: lucida sans;
 }
-
-/*header*/
-
-#head
-{
-	width: 100%;
-	height: 100px;
+ul{
+    list-style-type: none;
 }
-header
-{
-	background-color: lightblue;
-	background-size: cover;
-	width: 100%;
-	height: 100px;
-	position: fixed;
+.menuderoulant li{
+    display: flex;
+    float: left;
+    width: 150px;
+   padding: 15px;
+   margin-top: 1.5%;
+   margin-right: -2%;
+   position: relative;
 }
-
-h1
-{
-	color: black;
-	float: left;
-	text-transform: uppercase;
-	padding-left: 150px;
-	padding-top: 30px;
-}
-.se:hover
-{
-	color: white;
-}
-.b
-{
-    float: right;
-}
-.b li 
-{
-    display: inline-block;
-    list-style: none;
-    padding-top: 40px;
-    position: relative;
-    margin-right: 80px ;
-}
-
-.b li a
-{
+.menuderoulant li a{
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
-	font-weight:  bold;
-   
-	
+    font-size: 1em;
+    
 }
-.b li a:hover
-{
-     color: black;   
-} 
-.a
-{
+.menuderoulant li a:hover{
+    color: black;
+}
+#sousmenu{
     display: none;
-    width: 150px;
-    margin-left: -140%;
-}
-li:hover .a
-{
-    display: inline-block;
-    background-color: white;
+    background: white;
+    margin-left: -20%;
+    margin-top: 20%; 
+    width: 80%;
     position: absolute;
-    top: 70px;
 }
-.a li 
-{
+#sousmenu li:hover{
+    background-color: rgb(175, 174, 174);
+    width: 80%;
+    
+}
+#sousmenu li a{
+    color: rgb(85, 84, 84);
+}
+#sousmenu li a:hover{
+    color: lightblue;
+    
+}
+#menuprincipal:hover #sousmenu{
     display: block;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin: 0px;
-}
-.b .a li a
-{
-	color: rgb(85, 84, 84); 
-}
-.a li a:hover
-{
-    background-color: none;
-    color: royalblue;
+    
 }
 
+.aa{
+    margin-left: 29%;
+}
+.cc{
+    margin-left: 70%;
+    color: white;
+    font-size: 1.2em;
+    margin-top: -4%;
+}
+.cc h1{
+    color: black;
+}
+.cc h1:hover{
+    color: white;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: lightblue;
+    
+    
+}
+
+@media screen and (max-width:1350px){
+    .bb4{
+       
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:1140px){
+    .bb3{
+        
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:950px){
+    .bb2{
+        
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:800px){
+    .bb1{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:600px){
+    .aa{
+        visibility: hidden;
+    }
+    .cc{
+        margin-left: 120%;
+        margin-top: 5%;
+        font-size: 1.2em;
+    }
+    
+}
 
 /*first*/
 
@@ -133,12 +150,14 @@ input[type="text"]
 	color: #777;
 	font-size: 20px;
 	font-weight: bold;
-	padding: 11px;
+	padding: 10px;
 	background-color: lightblue;
 	border-style: none;
 	border-radius: 3px;
 	line-height: 35px;
-	padding-top: 2px;
+	padding-top: 0.4%;
+	transition: 1.5s;
+	
 }
 .button-3:hover
 {
@@ -159,9 +178,9 @@ strong
 	
 }
 @media screen and (max-width: 700px) {
-	nav
+	
 	{
-		visibility: hidden;
+		
 	}
 	input 
 	{
@@ -227,6 +246,7 @@ article h3
 	padding-bottom: 10px;
 	margin-top: 15px;
 	text-decoration: none;
+	transition: 1.5s;
 	
 }
 .button-2:hover
@@ -250,86 +270,44 @@ article h3
 	max-width: 1300px;
 	width: 80%;
 	height: auto;
-	margin: 30px 100px 40px auto;
+	margin: 30px 135px 40px auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 300px);
 	justify-content: center;
-	grid-gap: 10px;
+	grid-gap: 20px;
 }
 .grid-item
 {
-	width: 300px;
-	height: 300px; 
-	background: #333;
+	width: 250px;
+	height: 250px; 
+	background: rgb(221, 219, 219);
 	transition: 1s;
+	margin-bottom: 50px;
+	border-radius: 5%;
+	box-shadow: 2px 6px 6px rgb(221, 219, 219);
+	
 }	
+.grid-item img
+{
+	border-radius: 5%;
+}
+.grid-item:hover img
+{
+	border-radius: 0%;
+}
 .grid-item:hover
 {
    transform: scale(1.2);
    z-index: 2;
-   box-shadow: 2px 4px 4px rgb(139, 138, 138);
+   border-radius: 0%;
+  
 }
-
-/*slid*/
-
-#slid
-{
-	margin-bottom0px;
-	margin-top: 80px;
-	margin-left: 180px ;
-	overflow: hidden;
-}
-#slid figure
-{
-	position:relative;
-	width: 80%;
-	margin: 0px;
-	left: 0px;
-	animation: 20s  infinite;
-	
-}
-#slid figure img
-{
-	width: 20%;
-	float: left;
-}
-@keyframes slider 
-{
-	0%{
-		left: 0%;
-	}
-	20%{
-		left: 0%;
-	}
-	25%{
-		left: -100%;
-	}
-	45%{
-		left: -100%;
-	}
-	50%{
-		left: -200%;
-	}
-	70%{
-		left: -200%;
-	}
-	75%{
-		left: -300%;
-	}
-	95%{
-		left: -300%;
-	}
-	100%{
-		left: -400%;
-	}
-}
-
 
 /*marquee*/
  
 .lui h2
 {
-	margin-top: 7px;
+	margin-top: 70px;
     text-align: center;
     font-size: 2.5em;
 	color: black;
@@ -356,18 +334,44 @@ article h3
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*footer*/
-.end
-{
-	height: 80px;
-	background-color: black;
-	background-size: cover;
-    margin-bottom: 0px;
-    opacity: 0.8;
+.mon-footer{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    opacity: 0.7;
 }
-.end .logos
-{
-	float: left;
-	padding-top: 25px;
-	padding-left: 700px;
-	padding-right: 20px;
+.icons{
+    display: flex;
+}
+.icons ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+}
+.icon a{
+    padding: 10px 20px;
+    
+}
+.sous-menu{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+.sous-menu ul{
+    display: flex;
+    margin-top: 10px;
+}
+.sous a{
+    text-decoration: none;
+    padding: 0px 25px;
+    font-size: 10px;
+    color: white;
+    
+}
+.sous a:hover{
+    color: lightblue;
 }
