@@ -100,7 +100,7 @@ header{
         visibility: hidden;
     }
     .cc{
-        margin-left: 120%;
+        margin-left: 115%;
         margin-top: 5%;
         font-size: 1.2em;
     }
@@ -187,7 +187,63 @@ strong
 		
 	}
 }
-
+/*slid*/
+.clear{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#slid
+{
+	overflow: hidden;
+	margin-top: 100px;
+	width: 80%;
+	height: 500px;
+	
+}
+#slid figure
+{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slid figure img
+{
+	width: 20%;
+	float: left;
+}
+@keyframes slider 
+{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
 /*main*/
 
 .me h2
@@ -254,6 +310,7 @@ article h3
 	background-color: #02b8dd;
 	
 }
+
 /*thirst*/
 
 #fir h2
@@ -302,6 +359,7 @@ article h3
    border-radius: 0%;
   
 }
+
 
 /*marquee*/
  
