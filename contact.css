@@ -1,95 +1,110 @@
-*
-{
-	margin: 0;
-	padding: 0;
-	font-family: Lucida Sans;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: lucida sans;
 }
-
-/*header*/
-
-#head
-{
-	width: 100%;
-	height: 100px;
+ul{
+    list-style-type: none;
 }
-header
-{
-	background-color: lightblue;
-	background-size: cover;
-	width: 100%;
-	height: 100px;
-	position: fixed;
+.menuderoulant li{
+    display: flex;
+    float: left;
+    width: 150px;
+   padding: 15px;
+   margin-top: 1.5%;
+   margin-right: -2%;
+   position: relative;
 }
-
-h1
-{
-	color: black;
-	float: left;
-	text-transform: uppercase;
-	padding-left: 150px;
-	padding-top: 30px;
-}
-.se:hover
-{
-	color: white;
-}
-
-.b
-{
-    float: right;
-}
-.b li 
-{
-    display: inline-block;
-    list-style: none;
-    padding-top: 40px;
-    position: relative;
-    margin-right: 80px;
-}
-
-.b li a
-{
+.menuderoulant li a{
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
-	font-weight:  bold;
-   
+    font-size: 1em;
+    
 }
-.b li a:hover
-{
-     color: black;   
-} 
-.a
-{
+.menuderoulant li a:hover{
+    color: black;
+}
+#sousmenu{
     display: none;
-    width: 150px;
-    margin-left: -140%;
-}
-li:hover .a
-{
-    display: inline-block;
-    background-color: white;
+    background: white;
+    margin-left: -20%;
+    margin-top: 20%; 
+    width: 80%;
     position: absolute;
-    top: 70px;
 }
-.a li 
-{
+#sousmenu li:hover{
+    background-color: rgb(175, 174, 174);
+    width: 80%;
+    
+}
+#sousmenu li a{
+    color: rgb(85, 84, 84);
+}
+#sousmenu li a:hover{
+    color: lightblue;
+    
+}
+#menuprincipal:hover #sousmenu{
     display: block;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin: 0px;
+    
 }
 
-.b .a li a
-{
-	color: rgb(85, 84, 84); 
+.aa{
+    margin-left: 29%;
 }
-.a li a:hover
-{
-    background-color: none;
-    color: royalblue;
+.cc{
+    margin-left: 70%;
+    color: white;
+    font-size: 1.2em;
+    margin-top: -4%;
+}
+.cc h1{
+    color: black;
+}
+.cc h1:hover{
+    color: white;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: lightblue;
+    
 }
 
+@media screen and (max-width:1350px){
+    .bb4{
+       
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:1140px){
+    .bb3{
+        
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:950px){
+    .bb2{
+        
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:800px){
+    .bb1{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:600px){
+    .aa{
+        visibility: hidden;
+    }
+    .cc{
+        margin-left: 120%;
+        margin-top: 5%;
+        font-size: 1.2em;
+    }
+    
+}
 body
 {
     background-image: url("tru.jpeg");
@@ -164,19 +179,44 @@ strong
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*footer*/
-.end
-{
-	height: 80px;
-	background-color: black;
-	background-size: cover;
-    margin-bottom: 0px;
-    opacity: 0.8;
-
+.mon-footer{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    opacity: 0.7;
 }
-.end .logos
-{
-	float: left;
-	padding-top: 25px;
-	padding-left: 700px;
-	padding-right: 20px;
+.icons{
+    display: flex;
+}
+.icons ul{
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-top: 5px;
+}
+.icon a{
+    padding: 10px 20px;
+    
+}
+.sous-menu{
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+.sous-menu ul{
+    display: flex;
+    margin-top: 10px;
+}
+.sous a{
+    text-decoration: none;
+    padding: 0px 25px;
+    font-size: 10px;
+    color: white;
+    
+}
+.sous a:hover{
+    color: lightblue;
 }
