@@ -39,6 +39,8 @@ ul{
 }
 #sousmenu li a{
     color: rgb(85, 84, 84);
+	font-family: lucida sans;
+    font-size: 12px;
 }
 #sousmenu li a:hover{
     color: lightblue;
@@ -100,7 +102,7 @@ header{
         visibility: hidden;
     }
     .cc{
-        margin-left: 120%;
+        margin-left: 115%;
         margin-top: 5%;
         font-size: 1.2em;
     }
@@ -187,7 +189,63 @@ strong
 		
 	}
 }
-
+/*slid*/
+.clear{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#slid
+{
+	overflow: hidden;
+	margin-top: 100px;
+	width: 80%;
+	height: 500px;
+	
+}
+#slid figure
+{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slid figure img
+{
+	width: 20%;
+	float: left;
+}
+@keyframes slider 
+{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
 /*main*/
 
 .me h2
@@ -254,6 +312,7 @@ article h3
 	background-color: #02b8dd;
 	
 }
+
 /*thirst*/
 
 #fir h2
@@ -313,20 +372,35 @@ article h3
 	color: black;
 	margin-bottom: 35px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-left: 15px;
 }
-.marquee
+.part p
 {
-	margin-top: 30px;
+	font-size: 1.2em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 50px;
+	padding-right: 140px;
 }
-.slide
+.part
 {
-	float: left;
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+}
+.imgb
+{
+	margin-right: 50px;
+	box-shadow: 0px 8px 8px 0px rgb(161, 170, 219);
 }
 
+.clear
+{
+	clear: both;
+}
 .lou h2
 {
-	margin-top: 15px;
+	margin-top: 60px;
     text-align: center;
     font-size: 2.5em;
 	color: black;
