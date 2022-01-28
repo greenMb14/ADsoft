@@ -119,7 +119,7 @@ header{
     border-bottom: gray solid;
     border-top: gray solid;
     color: gray;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 .text p{
     padding: 30px 0px;
@@ -133,95 +133,101 @@ header{
     border: lightblue solid 5px;
     background: url(images/hostinger-mutualise.jpg);
     margin: 100px auto;
-    transform-style: preserve-3d;
     animation: slide 20s linear infinite;
 }
 @keyframes slide {
     10%{
         background: url(images/hostinger-mutualise.jpg) no-repeat;
         width: 90%;
-        background-size: cover;
-        transform: perspective(3000px) rotateX(0deg);
-        
+        height: 500px;
+        background-size: cover;        
     }
     25%{
         background: url(images/hostinger-mutualise.jpg) no-repeat;
         width: 50%;
+        height: 300px;
         background-size: cover;
-        transform: perspective(3000px) rotateX(180deg);
     }
     35%{
         background: url(images/hostinger-pricing-jun-21.jpg) no-repeat;
         width: 50%;
+        height: 300px;
         background-size: cover;
         
     }
     50%{
         background: url(images/hostinger-pricing-jun-21.jpg)no-repeat;
         width: 90%;
+        height: 500px;
         background-size: cover;
     }   
     60%{
         background: url(images/hostinger-pricing-jun-21.jpg)no-repeat;
         width: 50%;
+        height: 300px;
         background-size: cover;
         
     }
     75%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
         width: 90%;
+        height: 500px;
         background-size: cover;
         
     }
     85%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
         width: 50%;
+        height: 300px;
         background-size: cover;
         
     }
     100%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
         width: 90%;
+        height: 500px;
         background-size: cover;
     }   
 }
 
-.mon-footer{
-    background-color: rgb(88, 87, 87);
+footer{
+    position: relative;
+    width: 100%;
+    background: rgb(88, 88, 88);
     opacity: 0.8;
+    min-height: 150px;
+    direction: flex;
+    justify-content: center;
+    align-items: center;
 }
-.icons{
+
+footer .icons, footer .sous-menu{
     display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
 }
-.icons ul{
-    padding: 10px;
-    display: flex;
-    width: 300px;
-    height: 30px;
-    margin: auto;
-    margin-top: 5px;
+footer .icons li , footer .sous-menu li{
+    list-style: none;
 }
-.icon a{
-    padding: 10px 20px;
-    
+footer .icons li a{
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-top: 30%;
 }
-.sous-menu{
-    display: flex;
-    width: 560px ;
-    height: 70px;
-    margin: auto;
+footer .icons li a:hover{
+    transform: translateY(-10px);
 }
-.sous-menu ul{
-    display: flex;
-    margin-top: 10px;
-}
-.sous a{
-    text-decoration: none;
-    padding: 0px 25px;
-    font-size: 10px;
+footer .sous-menu li a{
+    font-size: 1em;
     color: white;
-    
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
 }
-.sous a:hover{
+footer .sous-menu li a:hover{
     color: lightblue;
 }
