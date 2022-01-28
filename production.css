@@ -117,7 +117,8 @@ header{
     border-bottom: gray solid;
     border-top: gray solid;
     color: gray;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10%;
 }
 .text p{
     padding: 30px 0px;
@@ -130,45 +131,45 @@ video{
     margin: 30px auto;
 }
 
-.mon-footer{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(88, 87, 87);
+footer{
+    position: relative;
+    width: 100%;
+    background: rgb(88, 88, 88);
     opacity: 0.8;
+    min-height: 150px;
+    direction: flex;
+    justify-content: center;
+    align-items: center;
 }
-.icons{
+
+footer .icons, footer .sous-menu{
     display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
 }
-.icons ul{
-    padding: 10px;
-    display: flex;
-    width: 300px;
-    height: 30px;
-    margin: auto;
-    margin-top: 5px;
+footer .icons li , footer .sous-menu li{
+    list-style: none;
 }
-.icon a{
-    padding: 10px 20px;
-    
+footer .icons li a{
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-top: 30%;
 }
-.sous-menu{
-    display: flex;
-    width: 560px;
-    height: 70px;
-    margin: auto;
+footer .icons li a:hover{
+    transform: translateY(-10px);
 }
-.sous-menu ul{
-    display: flex;
-    margin-top: 10px;
-}
-.sous a{
-    text-decoration: none;
-    padding: 0px 25px;
-    font-size: 10px;
+footer .sous-menu li a{
+    font-size: 1em;
     color: white;
-    
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
 }
-.sous a:hover{
+footer .sous-menu li a:hover{
     color: lightblue;
 }
 
@@ -177,53 +178,19 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: url("images/gif3.gif") no-repeat;
+    background-size: cover;
     width: 100%;
-
 }
 
 
 .slider{
-    overflow: hidden;
-    height: 500px;
     width: 80%;
-    margin-bottom: 20px;
+    height: 500px;
+    border: lightblue solid 5px;
+    background: url(images/pro.png) no-repeat;
+    background-size: cover;
+    margin: 100px auto;
+    animation: slide 20s linear infinite;
 }
-.slider figure{
-    position: relative;
-    width: 500%;
-    margin: 20px auto;
-    left: 0;
-    animation: slider 20s linear infinite;
-}
-.slider figure img{
-    width: 20%;
-    float: left;
-}
-@keyframes slider{
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 0;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    95%{
-        left: -300%;
-    }
-    100%{
-        left: -400%;
-    }
 
-}
