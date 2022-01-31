@@ -375,13 +375,20 @@ article h3
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin-left: 15px;
 }
+.part h2
+{
+	font-size: 3em;
+	margin-left: 50px ;
+	margin-top: 70px;
+}
 .part p
 {
 	font-size: 1.2em;
 	font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 50px;
 	padding-right: 140px;
-}
+	margin-top: 20px;
+}	
 .part
 {
 	display: flex;
