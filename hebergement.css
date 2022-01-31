@@ -10,9 +10,8 @@ ul{
     display: flex;
     float: left;
     width: 150px;
-   padding: 15px;
-   margin-top: 1.5%;
-   margin-right: -2%;
+   padding: 10px;
+   margin-top: 2%;
    position: relative;
 }
 .menuderoulant li a{
@@ -27,14 +26,14 @@ ul{
 #sousmenu{
     display: none;
     background: white;
-    margin-left: -20%;
+    margin-left: -70%;
     margin-top: 20%; 
-    width: 80%;
+    width: 100%;
     position: absolute;
 }
 #sousmenu li:hover{
     background-color: rgb(175, 174, 174);
-    width: 80%;
+    width: 86.5%;
     
 }
 #sousmenu li a{
@@ -48,11 +47,11 @@ ul{
 }
 #menuprincipal:hover #sousmenu{
     display: block;
-    
+    position: relative;
 }
 
 .aa{
-    margin-left: 29%;
+    margin-left: 23%;
 }
 .cc{
     margin-left: 70%;
@@ -77,7 +76,7 @@ header{
 @media screen and (max-width:1350px){
     .bb4{
        
-        display: none;
+        visibility: hidden;
     }
 }
 @media screen and (max-width:1140px){
@@ -111,7 +110,7 @@ header{
 
 .text{
     width: 70%;
-    margin: 30px auto ;
+    margin: 30px auto 150px auto ;
     
 }
 .text h1{
@@ -120,9 +119,15 @@ header{
     border-top: gray solid;
     color: gray;
     font-family: 'Times New Roman', Times, serif;
+    transition: 0.5s;
+}
+.text h1:hover{
+    
+    color: lightblue;
+    transform: translateY(-10px);
 }
 .text p{
-    padding: 30px 0px;
+    padding: 20px 0px;
     color: rgb(71, 71, 71);
     font-style: italic;
 }
@@ -139,95 +144,125 @@ header{
     10%{
         background: url(images/hostinger-mutualise.jpg) no-repeat;
         width: 90%;
-        height: 500px;
         background-size: cover;        
     }
     25%{
         background: url(images/hostinger-mutualise.jpg) no-repeat;
         width: 50%;
-        height: 300px;
         background-size: cover;
     }
     35%{
         background: url(images/hostinger-pricing-jun-21.jpg) no-repeat;
         width: 50%;
-        height: 300px;
         background-size: cover;
         
     }
     50%{
         background: url(images/hostinger-pricing-jun-21.jpg)no-repeat;
         width: 90%;
-        height: 500px;
         background-size: cover;
     }   
     60%{
         background: url(images/hostinger-pricing-jun-21.jpg)no-repeat;
         width: 50%;
-        height: 300px;
         background-size: cover;
         
     }
     75%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
         width: 90%;
-        height: 500px;
         background-size: cover;
         
     }
     85%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
         width: 50%;
-        height: 300px;
         background-size: cover;
         
     }
     100%{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
         width: 90%;
-        height: 500px;
         background-size: cover;
     }   
 }
 
-footer{
-    position: relative;
+.footer{
+    max-width: 1300px;
     width: 100%;
-    background: rgb(88, 88, 88);
-    opacity: 0.8;
-    min-height: 150px;
-    direction: flex;
+    height: auto;
+    margin: 30px auto;  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
-    align-items: center;
+    grid-gap: 10px; 
+}
+footer{
+    background: #333;
+    color: #f1f1f1;
+    opacity: 0.8;
 }
 
-footer .icons, footer .sous-menu{
-    display: flex;
+.grid-items{
+    width: 300px;
+    height: 300px;
     position: relative;
-    justify-content: center;
+    
+}
+.bloc{
+    margin: 0 30px;
+}
+
+/*contact*/
+.footer-contact h3, .footer-services h3, .footer-horaires h3, .footer-media h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.footer-contact p{
+    padding: 5px 0;
+}
+
+/*services*/
+
+.liste-services, .liste-horaires, .liste-media{
+    list-style-type: none;
+}
+.liste-services li{
+    padding: 2px 0;
+}
+.liste-services a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.liste-services a:hover{
+    color: lightblue;
+}
+
+/*media*/
+
+.liste-media img{
+    width: 40px;
+    margin: 10px 10px;
+}
+.liste-media a{
+    text-decoration: none;
+    color: #f1f1f1;
+    display: flex;
     align-items: center;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
-footer .icons li , footer .sous-menu li{
-    list-style: none;
-}
-footer .icons li a{
-    margin: 0 10px;
-    display: inline-block;
+    font-size: 25px;
     transition: 0.5s;
-    margin-top: 30%;
 }
-footer .icons li a:hover{
+.liste-media a:hover{
+    color: lightblue;
     transform: translateY(-10px);
 }
-footer .sous-menu li a{
-    font-size: 1em;
-    color: white;
-    margin: 0 10px;
-    display: inline-block;
-    text-decoration: none;
-}
-footer .sous-menu li a:hover{
-    color: lightblue;
+.copyright{
+    width: 100%;
+    height: 50px;
+    margin-top: 5%;
+    background: rgb(78, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
