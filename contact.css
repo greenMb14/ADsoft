@@ -118,25 +118,29 @@ body
 {
    display: flex;
    color: white;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
 }
 .tout .mot
 {
-    margin-left: 50px;
-    margin-top: 290px;
+    
     font-size: 2em;
-
+    margin-right: 50px;
+    margin-top: 190px;
 }
 .tout .mot p
 {
     font-size: 0.8em;
-    margin-top: 20px;
+    margin-right: 50px;
+    margin-top: 30px;
 }
 form
 {
     background-color: lightblue;
-    margin-left: 200px;
+    margin-left: 50px;
     border-radius: 10px;
-    margin-top: 100px;
+    
     padding-left: 50px;
     width: 500px;
     height: 390px;
@@ -228,15 +232,66 @@ form .pied-formulaire button:hover
  
 }
 
-@media screen and (max-width:600px) {
-    form .corps-formulaire .droite
-{
-    margin: 0px;
+@media screen and (max-width:1400px) {
     
+form .corps-formulaire .droite
+{
+    margin-left: 0%;
+}
+form 
+{
+    width: 260px;
+    height: 500px;
+    margin-top: 40px;
+}
+form h1
+{
+    margin-left: 0px
+}
+.tout
+{
+   display: flex;
+   flex-direction: column;
+  margin-top: -90px;
+  margin-left: -100px;
+}
+form .pied-formulaire button
+{
+    margin-top: 380px;
+    margin-left: 0px;
 }
 
 }
-
+@media screen and (max-width:600px) {
+    
+    form .corps-formulaire .droite
+    {
+        margin-left: 0%;
+    }
+    form 
+    {
+        width: 260px;
+        height: 500px;
+        margin-top: 40px;
+    }
+    form h1
+    {
+        margin-left: 0px
+    }
+    .tout
+    {
+       display: flex;
+       flex-direction: column;
+      margin-top: -90px;
+      margin-left: -300px;
+    }
+    form .pied-formulaire button
+    {
+        margin-top: 380px;
+        margin-left: 0px;
+    }
+    
+    }
 .lou h2
 {
 	margin-top: 50px;
