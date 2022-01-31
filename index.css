@@ -416,44 +416,80 @@ article h3
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*footer*/
-.mon-footer{
-    margin: 0;
-    padding: 0;
-    background-color: gray;
-    opacity: 0.7;
+.footer{
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px; 
 }
-.icons{
-    display: flex;
+footer{
+    background: #333;
+    color: #f1f1f1;
+    opacity: 0.8;
 }
-.icons ul{
-    padding: 10px;
-    display: flex;
+
+.grid-items{
     width: 300px;
-    height: 30px;
-    margin: auto;
-    margin-top: 5px;
-}
-.icon a{
-    padding: 10px 20px;
+    height: 300px;
+    position: relative;
     
 }
-.sous-menu{
-    display: flex;
-    width: 560px;
-    height: 70px;
-    margin: auto;
+.bloc{
+    margin: 0 30px;
 }
-.sous-menu ul{
-    display: flex;
-    margin-top: 10px;
+
+/*contact*/
+.footer-contact h3, .footer-services h3, .footer-horaires h3, .footer-media h3{
+    font-size: 25px;
+    padding-bottom: 20px;
 }
-.sous a{
+.footer-contact p{
+    padding: 5px 0;
+}
+
+/*services*/
+
+.liste-services, .liste-horaires, .liste-media{
+    list-style-type: none;
+}
+.liste-services li{
+    padding: 2px 0;
+}
+.liste-services a{
     text-decoration: none;
-    padding: 0px 25px;
-    font-size: 10px;
-    color: white;
-    
+    color: #f1f1f1;
 }
-.sous a:hover{
+.liste-services a:hover{
     color: lightblue;
+}
+
+/*media*/
+
+.liste-media img{
+    width: 40px;
+    margin: 10px 10px;
+}
+.liste-media a{
+    text-decoration: none;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+.liste-media a:hover{
+    color: lightblue;
+    transform: translateY(-10px);
+}
+.copyright{
+    width: 100%;
+    height: 50px;
+    background: rgb(78, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
