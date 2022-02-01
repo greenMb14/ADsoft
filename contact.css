@@ -232,36 +232,30 @@ form .pied-formulaire button:hover
  
 }
 
-@media screen and (max-width:1400px) {
-    
-form .corps-formulaire .droite
-{
-    margin-left: 0%;
-}
-form 
-{
-    width: 260px;
-    height: 500px;
-    margin-top: 40px;
-}
-form h1
-{
+@media screen and (max-width:600px) {
+    .tout{
+       display: block;
+       margin-left: 40px;
+    }
+    form {
+        margin-top: 130px;
+        margin-left: 0px;
+        width: 350px;
+        height: 500px;
+    }
+    form h1{
     margin-left: 0px
-}
-.tout
-{
-   display: flex;
-   flex-direction: column;
-  margin-top: -90px;
-  margin-left: -100px;
-}
-form .pied-formulaire button
-{
+    }
+    form .corps-formulaire .droite{
+    margin-left: 0%;
+    }
+   form .pied-formulaire button{
     margin-top: 380px;
     margin-left: 0px;
-}
+    }
 
 }
+ 
 
 .lou h2
 {
