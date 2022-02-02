@@ -110,8 +110,41 @@ header{
 
 .wer h1
 {
-    padding-top: 150px;
+    padding-top: 100px;
     color: black;
     text-align: center;
     font-size: 3em;
 }
+
+/*all*/
+
+.all
+{
+    display: inline;
+}
+.ko
+{
+    
+   float: right;
+   margin: 20px 0px 0px 800px;
+}
+.ko h2
+{
+    padding: 20px;
+   
+}
+.eux 
+{
+    margin: -380px 0px 0px 40px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.eux h3
+{
+   margin: 220px 0px 0px -100px;
+   
+}
+.eux img
+{
+    
