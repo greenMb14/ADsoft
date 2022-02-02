@@ -224,9 +224,16 @@ footer{
     font-size: 25px;
     padding-bottom: 20px;
     padding-top: 30px;
+    color: black;
 }
 .footer-contact p{
     padding: 5px 0;
+}
+.liste-contacts p{
+    transition: 0.5s;
+}
+.liste-contacts p:hover{
+    transform: translateY(-10px);
 }
 
 /*services*/
@@ -235,14 +242,19 @@ footer{
     list-style-type: none;
 }
 .liste-services li{
-    padding: 2px 0;
+    padding: 5px 0;
+    transition: 0.5s;
 }
-.liste-services a{
+.liste-services li:hover{
+    transform: translateY(-10px);
+}
+.liste-services li a{
     text-decoration: none;
     color: #f1f1f1;
 }
-.liste-services a:hover{
+.liste-services li a:hover{
     color: lightblue;
+   
 }
 
 /*media*/
@@ -261,6 +273,16 @@ footer{
 }
 .liste-media a:hover{
     color: lightblue;
+    transform: translateY(-10px);
+}
+
+/*horaire*/
+
+.liste-horaires li{
+    padding: 5px 0;
+    transition: 0.5s;
+}
+.liste-horaires li:hover{
     transform: translateY(-10px);
 }
 .copyright{

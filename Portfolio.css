@@ -53,6 +53,7 @@ ul{
     position: relative;
 }
 
+
 .aa{
     margin-left: 23%;
 }
@@ -71,16 +72,16 @@ header{
     width: 100%;
     height: 90px;
     background-color: lightblue;
-    
-    
+      
 }
 
 @media screen and (max-width:1350px){
     .bb4{
+       
         visibility: hidden;
     }
 }
-@media screen and (max-width: 1140px){
+@media screen and (max-width:1140px){
     .bb3{
         
         visibility: hidden;
@@ -96,9 +97,8 @@ header{
     .bb1{
         visibility: hidden;
     }
-    
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
     .aa{
         visibility: hidden;
     }
@@ -109,6 +109,7 @@ header{
     }
     
 }
+
 .banner{
     background: url("images/ssssssssssssssss.jpg") no-repeat;
     width: 100%;
@@ -136,7 +137,6 @@ header{
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 10px; 
-    
 }
 .grid-item{
     width: 300px;
@@ -252,9 +252,17 @@ footer{
 .footer-contact h3, .footer-services h3, .footer-horaires h3, .footer-media h3{
     font-size: 25px;
     padding-bottom: 20px;
+    padding-top: 30px;
+    color: black;
 }
 .footer-contact p{
     padding: 5px 0;
+}
+.liste-contacts p{
+    transition: 0.5s;
+}
+.liste-contacts p:hover{
+    transform: translateY(-10px);
 }
 
 /*services*/
@@ -263,14 +271,19 @@ footer{
     list-style-type: none;
 }
 .liste-services li{
-    padding: 2px 0;
+    padding: 5px 0;
+    transition: 0.5s;
 }
-.liste-services a{
+.liste-services li:hover{
+    transform: translateY(-10px);
+}
+.liste-services li a{
     text-decoration: none;
     color: #f1f1f1;
 }
-.liste-services a:hover{
+.liste-services li a:hover{
     color: lightblue;
+   
 }
 
 /*media*/
@@ -291,6 +304,16 @@ footer{
     color: lightblue;
     transform: translateY(-10px);
 }
+
+/*horaire*/
+
+.liste-horaires li{
+    padding: 5px 0;
+    transition: 0.5s;
+}
+.liste-horaires li:hover{
+    transform: translateY(-10px);
+}
 .copyright{
     width: 100%;
     height: 50px;
@@ -298,4 +321,68 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+/*menu hamburger*/
+#icon-menu{
+    display: none;
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin: 25px;
+}
+.hamburger{
+    display: none;
+}
+ 
+@media screen and (max-width:600px){
+    header{
+        position: absolute;
+    }
+    .hamburger{
+        display: block;
+    }
+    .content{
+        display: none;
+    }
+    #icon-menu{
+       display: block;
+       width: 50px;
+       height: 70px;
+    }
+    .hamburger nav ul, .hamburger nav:active  ul{
+        display: block;
+        position: absolute;
+        background: rgb(0, 0, 0);
+        top: 90px;
+        width: 100%;
+        opacity: 0.7;
+    }
+    .hamburger nav:hover ul{
+        display: block;
+
+    }
+    .hamburger nav ul li{
+        text-align: center;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: wheat dashed 1px;
+    }
+    .hamburger nav ul li:hover{
+        background-color: rgb(52, 53, 53);
+    }
+    .hamburger nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    .hamburger nav ul li a:hover{
+        color: lightblue;
+    }
+    
+    
 }
