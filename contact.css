@@ -106,11 +106,19 @@ header{
     }
     
 }
+
+/*body*/
+
 body
 {
     background-image: url("yes.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+@media screen and (max-width:600px){
+    body{
+        width: 550px;
+    }
 }
 
 /*main*/
@@ -235,23 +243,32 @@ form .pied-formulaire button:hover
 @media screen and (max-width:600px) {
     .tout{
        display: block;
-       margin-left: 40px;
+       margin-left: 50px;
     }
     form {
         margin-top: 130px;
         margin-left: 0px;
-        width: 350px;
+        width: 400px;
         height: 500px;
     }
     form h1{
-    margin-left: 0px
+        margin-left: 0px
     }
     form .corps-formulaire .droite{
-    margin-left: 0%;
+        margin-left: 0%;
+        width: 350px;
     }
    form .pied-formulaire button{
-    margin-top: 380px;
-    margin-left: 0px;
+        margin-top: 380px;
+        margin-left: 0px;
+        width: 350px;
+    }
+    form .corps-formulaire .gauche .groupe{
+        width: 350px;
+    }
+    form .separaton{
+        width: 88%;
+    
     }
 
 }
