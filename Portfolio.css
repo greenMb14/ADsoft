@@ -9,7 +9,7 @@ ul{
 .menuderoulant li{
     display: flex;
     float: left;
-    width: 150px;
+    width: 100px;
    padding: 10px;
    margin-top: 2%;
    position: relative;
@@ -52,7 +52,7 @@ ul{
 
 
 .aa{
-    margin-left: 23%;
+    margin-left: 38%;
 }
 .cc{
     margin-left: 70%;
@@ -71,7 +71,7 @@ header{
     background-color: lightblue;
       
 }
-
+/*menu
 @media screen and (max-width:1350px){
     .bb4{
        
@@ -101,6 +101,27 @@ header{
     }
     
     
+}*/
+@media screen and (max-width:1350px){
+    .aa{
+       margin-left: 20%;
+    }
+}
+@media screen and (max-width:1300px){
+    .aa{
+       margin-left: 38%;
+    }
+    .menuderoulant li{
+        padding: 12px;
+    }
+}
+@media screen and (max-width:1024px){
+    .aa{
+       margin-left: 20%;
+    }
+    .menuderoulant li{
+        padding: 13px;
+    }
 }
 
 .banner{
@@ -135,7 +156,7 @@ header{
     max-width: 600px;
     width: 100%;
     height: auto;
-    margin: 30px auto;  
+    margin: 60px auto;  
     display: grid;  
     grid-template-columns: repeat(auto-fill, 203px);
     justify-content: center;
@@ -193,12 +214,13 @@ header{
     background: url(images/font.png) no-repeat;
     width: 100%;
     background-size: cover;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 5%;
     height: 50px;
     margin: 40px 0px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    text-shadow: 5px 15px 8px rgb(145, 144, 144);
     font-family: 'Times New Roman', Times, serif;
 }
 

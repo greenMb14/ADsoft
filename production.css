@@ -413,6 +413,21 @@ label{
         width: 200px;
     }
 }
+@media only screen and (max-width:450px){
+    .logo{
+        margin-right: 40%;
+    }
+}
+@media only screen and (max-width:355px){
+    .logo{
+        margin-right: 30%;
+    }
+}
+@media only screen and (max-width:310px){
+    .logo{
+        margin-right: 20%;
+    }
+}
 @media only screen and (max-width:415px){
     .footer{
         grid-template-columns: repeat(auto-fill, 188px);
