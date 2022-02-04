@@ -186,6 +186,12 @@ strong
 	
 }
 @media screen and (max-width: 600px) {
+	.first h2{
+		font-size: 2.2em;
+	}
+	.first p{
+		font-size: 1.2em;
+	}
 	form{
 		display: flex;
 		flex-direction: column;
@@ -345,6 +351,7 @@ article h3
 	color: black;
 	margin-bottom: 65px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: rgb(135, 134, 218);
 }
 .grille
 {
@@ -409,13 +416,18 @@ article h3
 	color: black;
 	margin-bottom: 35px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	margin-left: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: white;
+	background-color: rgb(19, 10, 71);
 }
 .part h2
 {
 	font-size: 3em;
 	margin-left: 50px ;
 	margin-top: 70px;
+	color: rgb(21, 21, 70);
+	
 }
 .part p
 {
@@ -424,6 +436,8 @@ article h3
     margin-left: 50px;
 	padding-right: 140px;
 	margin-top: 20px;
+	color: rgb(21, 21, 70)
+	
 }
 .part
 {
@@ -472,6 +486,7 @@ article h3
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*footer*/
+
 .footer{
     max-width: 1300px;
     width: 100%;
@@ -492,19 +507,28 @@ footer{
     width: 300px;
     height: 300px;
     position: relative;
-    
+
 }
 .bloc{
     margin: 0 30px;
 }
 
 /*contact*/
+
 .footer-contact h3, .footer-services h3, .footer-horaires h3, .footer-media h3{
     font-size: 25px;
     padding-bottom: 20px;
+    padding-top: 30px;
+    color: black;
 }
 .footer-contact p{
     padding: 5px 0;
+}
+.liste-contacts p{
+    transition: 0.5s;
+}
+.liste-contacts p:hover{
+    transform: translateY(-10px);
 }
 
 /*services*/
@@ -513,14 +537,19 @@ footer{
     list-style-type: none;
 }
 .liste-services li{
-    padding: 2px 0;
+    padding: 5px 0;
+    transition: 0.5s;
 }
-.liste-services a{
+.liste-services li:hover{
+    transform: translateY(-10px);
+}
+.liste-services li a{
     text-decoration: none;
     color: #f1f1f1;
 }
-.liste-services a:hover{
+.liste-services li a:hover{
     color: lightblue;
+   
 }
 
 /*media*/
@@ -541,9 +570,20 @@ footer{
     color: lightblue;
     transform: translateY(-10px);
 }
+
+/*horaire*/
+
+.liste-horaires li{
+    padding: 5px 0;
+    transition: 0.5s;
+}
+.liste-horaires li:hover{
+    transform: translateY(-10px);
+}
 .copyright{
     width: 100%;
     height: 50px;
+    margin-top: 5%;
     background: rgb(78, 78, 78);
     display: flex;
     justify-content: center;

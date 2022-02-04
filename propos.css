@@ -105,6 +105,94 @@ header{
     }
     
 }
+@media screen and (max-width: 600px) {
+    body{
+        width: 550px;
+    }
+}
+
+/*all*/
+
+.all
+{
+    display: flex;
+    margin: 60px 0px 0px 40px;
+}
+.ko h2
+{
+    padding: 20px;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+    background-color: rgb(19, 10, 71);;
+    color: white;
+    box-shadow: 8px 8px 8px 4px rgb(231, 229, 229);
+}
+.ko h2:hover
+{
+    color: black;
+}
+.ko p
+{
+    color: rgb(21, 21, 70);
+}
+.deux
+{
+    margin: 105px 0px 0px 20px;
+}
+.trois1 .eux img
+{
+    margin-right: 30px;
+    box-shadow: 0px 0px 8px 8px rgb(231, 229, 229);
+}
+.trois1 .cas 
+{
+    margin: 40px 29px 0px 0px;
+    background-color: rgb(19, 10, 71);;
+}
+.trois1 .cas h3
+{
+    padding: 0px 0px 0px 420px;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;   
+}
+.trois2 .ceux img
+{
+    margin: 40px 30px 0px 0px;
+    box-shadow: 0px 0px 8px 8px rgb(221, 218, 218);
+}
+.trois2 .cis 
+{
+    margin: 40px 29px 0px 0px;
+    background-color: rgb(19, 10, 71);;
+}
+.trois2 .cis h3
+{
+    padding: 0px 0px 0px 420px;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media screen and (max-width: 600px) {
+    body{
+        width: 550px;
+    }
+    .all{
+        display: block;
+        margin-left: 30px;
+    }
+    .trois1 .eux img{
+        margin-top: 40px;
+    }
+    .trois1 .cas h3{
+        padding-left: 163px;
+    }
+    .trois2 .cis h3{
+        padding-left: 163px;
+    }
+}
 
 /*wer*/
 
@@ -114,101 +202,11 @@ header{
     color: black;
     text-align: center;
     font-size: 3em;
+    color: rgb(19, 10, 71);;
 }
-
-/*all*/
-
-.all
-{
-    display: inline;
-}
-.ko
-{
-   float: left;
-   margin: 40px 0px 0px 40px;
-   
-}
-.ko h2
-{
-    padding: 20px;
-    margin-left: 60px;
-}
-.eux 
-{
-    float: right;
-    display: flex;
-    flex-direction: row;
-    margin: 120px 10px 0px 0px;
-
-}
-.eux img
-{
-    margin-right: 30px;
-    box-shadow: 0px 0px 8px 8px rgb(221, 218, 218);
-}
-.cas
-{
-    
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 460px;
-    padding-left: 430px;
-}
-.ceux 
-{
-    float: right;
-    display: flex;
-    flex-direction: row;
-    margin: 40px 10px 0px 0px;
-
-}
-.ceux img
-{
-    margin-right: 30px;
-    box-shadow: 0px 0px 8px 8px rgb(221, 218, 218);
-}
-.cis
-{
-    
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 370px;
-    padding-left: 430px;
-}
-@media screen and (max-width: 600px) {
-    body{
-        width: 550px;
-    }
-    .eux{
-        display: block;
-        margin-left: 50px;
-        margin-top: 30px;
-    }
-    .eux img{
-        
-        margin-top: 50px;
-    }
-    .ceux{
-        display: block;
-        margin-left: 50px;
-    }
-    .ceux img{
-        
-        margin-top: 50px;
-    }
-    .cas h3{
-       margin-left: -390px;
-        margin-top: 70px;
-    }
-    .cis h3{
-        margin-left: -390px;
-        margin-top: 70px;
+@media screen and (max-width: 600px){
+    .wer h1{
+        font-size: 2.5em;
     }
 }
 
@@ -251,12 +249,21 @@ footer{
 }
 
 /*contact*/
+
 .footer-contact h3, .footer-services h3, .footer-horaires h3, .footer-media h3{
     font-size: 25px;
     padding-bottom: 20px;
+    padding-top: 30px;
+    color: black;
 }
 .footer-contact p{
     padding: 5px 0;
+}
+.liste-contacts p{
+    transition: 0.5s;
+}
+.liste-contacts p:hover{
+    transform: translateY(-10px);
 }
 
 /*services*/
@@ -265,14 +272,19 @@ footer{
     list-style-type: none;
 }
 .liste-services li{
-    padding: 2px 0;
+    padding: 5px 0;
+    transition: 0.5s;
 }
-.liste-services a{
+.liste-services li:hover{
+    transform: translateY(-10px);
+}
+.liste-services li a{
     text-decoration: none;
     color: #f1f1f1;
 }
-.liste-services a:hover{
+.liste-services li a:hover{
     color: lightblue;
+   
 }
 
 /*media*/
@@ -293,9 +305,20 @@ footer{
     color: lightblue;
     transform: translateY(-10px);
 }
+
+/*horaire*/
+
+.liste-horaires li{
+    padding: 5px 0;
+    transition: 0.5s;
+}
+.liste-horaires li:hover{
+    transform: translateY(-10px);
+}
 .copyright{
     width: 100%;
     height: 50px;
+    margin-top: 5%;
     background: rgb(78, 78, 78);
     display: flex;
     justify-content: center;

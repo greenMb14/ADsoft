@@ -148,7 +148,6 @@ form
     background-color: lightblue;
     margin-left: 50px;
     border-radius: 10px;
-    
     padding-left: 50px;
     width: 500px;
     height: 390px;
@@ -276,13 +275,19 @@ form .pied-formulaire button:hover
 
 .lou h2
 {
-	margin-top: 150px;
+	margin-top: 240px;
     text-align: center;
     font-size: 2.5em;
 	color: white;
     margin-bottom: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media screen and (max-width:600px){
+    .lou h2{
+        margin-top: 200px;
+    }
+}
+
 /*footer*/
 
 .footer{
@@ -315,9 +320,17 @@ footer{
 .footer-contact h3, .footer-services h3, .footer-horaires h3, .footer-media h3{
     font-size: 25px;
     padding-bottom: 20px;
+    padding-top: 30px;
+    color: black;
 }
 .footer-contact p{
     padding: 5px 0;
+}
+.liste-contacts p{
+    transition: 0.5s;
+}
+.liste-contacts p:hover{
+    transform: translateY(-10px);
 }
 
 /*services*/
@@ -326,14 +339,19 @@ footer{
     list-style-type: none;
 }
 .liste-services li{
-    padding: 2px 0;
+    padding: 5px 0;
+    transition: 0.5s;
 }
-.liste-services a{
+.liste-services li:hover{
+    transform: translateY(-10px);
+}
+.liste-services li a{
     text-decoration: none;
     color: #f1f1f1;
 }
-.liste-services a:hover{
+.liste-services li a:hover{
     color: lightblue;
+   
 }
 
 /*media*/
@@ -354,9 +372,20 @@ footer{
     color: lightblue;
     transform: translateY(-10px);
 }
+
+/*horaire*/
+
+.liste-horaires li{
+    padding: 5px 0;
+    transition: 0.5s;
+}
+.liste-horaires li:hover{
+    transform: translateY(-10px);
+}
 .copyright{
     width: 100%;
     height: 50px;
+    margin-top: 5%;
     background: rgb(78, 78, 78);
     display: flex;
     justify-content: center;
