@@ -291,6 +291,11 @@ strong
 	
 }
 @media screen and (max-width: 600px) {
+	.first{
+	background-image: url("jk.jpg");
+	background-size: cover;
+	background-position: center;
+	}
 	.first h2{
 		font-size: 2.2em;
 	}
@@ -552,6 +557,10 @@ article h3
 	margin-top: 70px;
 
 }
+.part .avec
+{
+	display: flex;
+}
 .imgb
 {
 	margin-right: 50px;
@@ -572,9 +581,11 @@ article h3
 	.imgb img{
 		width: 465px;
 	}
+	.part .avec
+	{
+		display: block;
+	}	
 		
-		
-	}
 }
 
 .clear
