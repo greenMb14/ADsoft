@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
 }
-body{
-    display: flex;
-    flex-direction: column;
-}
+body{width: 100%;}
+
 ul{
     list-style-type: none;
 }
@@ -177,6 +175,12 @@ header{
 
 
 .h1-grille1{
+    background: url(images/font.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 50px;
     margin: 40px 0px;
     text-align: center;
     font-size: 1.2em;
@@ -241,7 +245,7 @@ footer{
 .grid-items{
     width: 300px;
     height: 300px;
-    position: relative;
+    
     
 }
 .bloc{
