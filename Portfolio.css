@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{width: 100%;}
 
 ul{
     list-style-type: none;
@@ -100,11 +99,7 @@ header{
     .aa{
         visibility: hidden;
     }
-    .cc{
-        margin-left: 115%;
-        margin-top: 5%;
-        font-size: 1.2em;
-    }
+    
     
 }
 
@@ -136,6 +131,17 @@ header{
     justify-content: center;
     grid-gap: 10px; 
 }
+.grille1a{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, 203px);
+    justify-content: center;
+    grid-gap: 25px; 
+    display: none;
+}
 .grid-item{
     width: 300px;
     height: 300px;
@@ -143,6 +149,15 @@ header{
     
 }
 .grid-item img{
+    border-radius: 3%;
+}
+.grid-iten{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+}
+.grid-iten img{
     border-radius: 3%;
 }
 .over{
@@ -197,6 +212,35 @@ header{
     justify-content: center;
     grid-gap: 10px;
 }
+.grille2a{
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto 230px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 203px);
+    justify-content: center;
+    grid-gap: 12px;
+    display: none;
+}
+.grid-iten1{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.grid-iten2{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.grid-iten1 img, .grid-iten2 img{
+    border-radius: 3%;
+}
+.grid-iten1:hover img, .grid-iten2:hover img,
+.grid-iten:hover img{
+    border-radius: 0%;
+    transition: border-radius 2.5s;
+}
 .grid-item1{
     width: 300px;
     height: 200px;
@@ -216,6 +260,14 @@ header{
 @media screen and (max-width: 900px){
     .grid-item3{
         display: none;
+    }
+}
+@media screen and (max-width:610px){
+    .grille2{
+        display: none;
+    }
+    .grille2a{
+        display: grid;
     }
 }
 .grid-item1 img, .grid-item2 img, .grid-item3 img{
@@ -330,63 +382,129 @@ footer{
 
 
 
-/*menu hamburger*/
-#icon-menu{
+/*nouveau hamburger*/
+
+.nav{
+    
+    text-align: right;
+    height: 70px;
     display: none;
-    width: 32px;
-    height: 32px;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-family: lucida sans;
+    margin-right: 55%;
+}
+.logo:hover{
+    color: white;
+}
+.menu{
+    margin: 0 30px 0 0;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    opacity: 0.8;
+    margin: 0 10px;
+    line-height: 50px;
+    clear: right;  
+}
+.menu a:hover{
+    background-color: lightblue;
+}
+label{
+    margin: 10px 40px 0 0;
+    font-size: 36px;
+    line-height: 70px;
+    display: none;
+    width: 100%;
     float: right;
-    margin: 25px;
+    
 }
-.hamburger{
+
+#toggle{
     display: none;
 }
- 
-@media screen and (max-width:600px){
-    header{
-        position: absolute;
-    }
-    .hamburger{
-        display: block;
-    }
+@media only screen and (max-width:650px){
     .content{
         display: none;
     }
-    #icon-menu{
-       display: block;
-       width: 50px;
-       height: 70px;
-    }
-    .hamburger nav ul, .hamburger nav:active  ul{
+    .nav{
         display: block;
-        position: absolute;
-        background: rgb(0, 0, 0);
-        top: 90px;
-        width: 100%;
-        opacity: 0.7;
     }
-    .hamburger nav:hover ul{
+    label{
         display: block;
-
+        cursor: pointer;
     }
-    .hamburger nav ul li{
+    .menu{
         text-align: center;
         width: 100%;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        border-bottom: wheat dashed 1px;
+        display: none;
     }
-    .hamburger nav ul li:hover{
-        background-color: rgb(52, 53, 53);
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #1b1b1b;
+        margin: 0;
     }
-    .hamburger nav ul li a{
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
+    #toggle:checked + .menu{
+        display: block;
     }
-    .hamburger nav ul li a:hover{
-        color: lightblue;
+    /*FOOTER MOBILE*/
+    .footer{
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;  
+        display: grid;  
+        grid-template-columns: repeat(auto-fill, 204px);
+        justify-content: center;
+
+    }
+    .liste-media a{
+        font-size: 15px;
+    }
+    .grid-items{
+        width: 200px;
+    }
+    /*grille1*/
+
+    .grille1{
+        display: none;
+    }
+    .grille1a{
+        display: grid;
     }
     
-    
+
+}
+
+@media only screen and (max-width:450px){
+    .logo{
+        margin-right: 40%;
+    }
+}
+@media only screen and (max-width:355px){
+    .logo{
+        margin-right: 30%;
+    }
+}
+@media only screen and (max-width:310px){
+    .logo{
+        margin-right: 20%;
+    }
+}
+@media only screen and (max-width:415px){
+    .footer{
+        grid-template-columns: repeat(auto-fill, 188px);
+    }
+    .grid-items{
+        width: 188px;
+        height: 300px;
+    }
+    .copyright{
+        margin-top: 20%;
+    }
 }

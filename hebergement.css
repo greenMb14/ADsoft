@@ -290,6 +290,7 @@ footer{
     text-decoration: none;
     color: black;
     font-family: lucida sans;
+    margin-right: 55%;
 }
 .logo:hover{
     color: white;
@@ -316,13 +317,11 @@ label{
     font-size: 36px;
     line-height: 70px;
     display: none;
-    width: 50%;
+    width: 100%;
     float: right;
     
 }
-.log{
-    font-size: 1.2em;
-}
+
 #toggle{
     display: none;
 }
@@ -349,6 +348,16 @@ label{
     }
     #toggle:checked + .menu{
         display: block;
+    }
+}
+@media only screen and (max-width:450px){
+    .logo{
+        margin-right: 40%;
+    }
+}
+@media only screen and (max-width:355px){
+    .logo{
+        margin-right: 30%;
     }
 }
 
@@ -391,5 +400,17 @@ label{
     }
     .grid-items{
         width: 200px;
+    }
+}
+@media only screen and (max-width:415px){
+    .footer{
+        grid-template-columns: repeat(auto-fill, 188px);
+    }
+    .grid-items{
+        width: 188px;
+        height: 300px;
+    }
+    .copyright{
+        margin-top: 20%;
     }
 }
