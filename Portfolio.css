@@ -52,7 +52,7 @@ ul{
 
 
 .aa{
-    margin-left: 38%;
+    margin-left: 40%;
 }
 .cc{
     margin-left: 70%;
@@ -104,12 +104,20 @@ header{
 }*/
 @media screen and (max-width:1350px){
     .aa{
-       margin-left: 20%;
+       margin-left: 38%;
     }
 }
 @media screen and (max-width:1300px){
     .aa{
        margin-left: 38%;
+    }
+    .menuderoulant li{
+        padding: 12px;
+    }
+}
+@media screen and (max-width:1250px){
+    .aa{
+       margin-left: 28%;
     }
     .menuderoulant li{
         padding: 12px;
@@ -332,6 +340,7 @@ footer{
     padding-bottom: 20px;
     padding-top: 30px;
     color: black;
+    font
 }
 .footer-contact p{
     padding: 5px 0;

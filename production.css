@@ -105,10 +105,15 @@ header{
     }
     
 }
-
+.texts{
+    background:url(images/font10.png) no-repeat;
+    background-size: cover;
+}
 .text{
     width: 70%;
     margin: 30px auto 150px AUTO;
+    padding-bottom: 20%;
+    padding-top: 10%;
     
 }
 .text h1{
@@ -133,6 +138,7 @@ header{
     border-radius: 20px 0px 20px 0px;
     padding-left: 10px;
     margin-top: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .video{
     display: flex;
@@ -168,10 +174,12 @@ footer{
     font-size: 25px;
     padding-bottom: 20px;
     padding-top: 30px;
-    color: black;
+    color: rgb(3, 3, 41);
+    font-family: lucida sans;
 }
 .footer-contact p{
     padding: 5px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .liste-contacts p{
     transition: 0.5s;
@@ -195,6 +203,7 @@ footer{
 .liste-services li a{
     text-decoration: none;
     color: #f1f1f1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .liste-services li a:hover{
     color: lightblue;
@@ -214,6 +223,7 @@ footer{
     align-items: center;
     font-size: 25px;
     transition: 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .liste-media a:hover{
     color: lightblue;
@@ -225,6 +235,7 @@ footer{
 .liste-horaires li{
     padding: 5px 0;
     transition: 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .liste-horaires li:hover{
     transform: translateY(-10px);
