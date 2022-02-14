@@ -50,7 +50,18 @@
     </header>
         
     <div class="first">
-        <h2>BIENVENUE CHEZ NOUS</h2>
+        <h2></h2>
+        <script language="javascript">
+        const h2= document.querySelector('h2');
+        const textTitle='BIENVENUE CHEZ NOUS...';
+        let i=0;
+        const interval= setInterval(() =>{
+            h2.innerHTML+= textTitle[i]
+            i++
+            if(i>=textTitle.length){
+                clearInterval(interval)}
+        }, 150)
+        </script>
         <p>Entrez Dans L'univers Du Numerique...</p>
         <form>
             <input type="text"  id="f" placeholder="Tapez ici votre nom">
@@ -100,7 +111,9 @@
         </div>
         <div class="clear"></div>
     <section id="fir">
-        <h2>NOS REALISATIONS...</h2>
+        <div class="sus">
+            <h2>NOS REALISATIONS...</h2>
+        </div>
         <div class="grille">
          <div class="grid-item"><img src="k.jpg" width="250px" height="250px"/></div>
          <div class="grid-item"><img src="c.jpg" width="250px" height="250px"/></div>
