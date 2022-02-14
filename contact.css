@@ -242,12 +242,14 @@ body
     background-image: url("yes.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 @media screen and (max-width:600px){
     body{
         width: 550px;
     }
 }
+
 
 /*main*/
 .tout
