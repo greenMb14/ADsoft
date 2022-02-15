@@ -142,7 +142,7 @@ header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.slider{
+/*.slider{
     width: 70%;
     height: 500px;
     border: lightblue solid 5px;
@@ -180,8 +180,63 @@ header{
         background: url(images/Hébergeur-web-IONOS.jpg)no-repeat;
         background-size: cover;
     }   
+}*/
+.slider{
+    max-width: 70%;
+    border: 10px solid blue;
+    margin: 215px auto;
+    position: relative;
+    overflow: hidden;
 }
-
+.slider .slider-items .item img{
+    width: 100%;
+    display: block;
+    
+}
+.slider .slider-items .item{
+    display: none;
+    position: relative;
+}
+.slider .slider-items .item.active{
+    display: block;
+}
+.slider .slider-items .item .caption{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slider .left-slide, .slider .right-slide{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all 3s ease;
+    font-size: 30px;
+}
+.slider .left-slide{
+    left: 30px;
+}
+.slider .right-slide{
+    right: 30px;
+}
+.slider .left-slide:hover, .slider .right-slide:hover{
+    background-color: lightblue;
+    box-shadow: 0px 0px 10px black;
+}
+/*klk*/
 .footer{
     max-width: 1300px;
     width: 100%;
@@ -389,9 +444,9 @@ label{
         font-weight: bold;
         font-size: 30px;
     }
-    .slider{
+    /*.slider{
         display: none;
-    }
+    }*/
     /*FOOTER MOBILE*/
     .footer{
         max-width: 600px;

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hebergement Web</title>
     <link rel="stylesheet" href="hebergement.css">
+    
 </head>
 <body>
     <header>
@@ -50,9 +51,34 @@
           
     </header>
     
-    <div class="slider">
+    <!--<div class="slider">
         <p>FAITES VOS HEBERGEMENTS A DE MEILLEURS PRIX</p>
+    </div>-->
+    <div class="slider">
+        <div class="slider-items">
+            <div class="item active">
+                <img src="images/830311-conception-de-modele-de-flyer-commercial-vertical-rouge-et-noir-gratuit-vectoriel.jpg" height="500px">
+                <div class="caption">
+                    slide 1
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/affiche-de-papier-conception-graphique-avec-les-courses-colorées-brosse-125370723.jpg" height="500px">
+                <div class="caption">
+                    slide 1
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/830311-conception-de-modele-de-flyer-commercial-vertical-rouge-et-noir-gratuit-vectoriel.jpg" height="500px">
+                <div class="caption">
+                    slide 1
+                </div>
+            </div>
+        </div>
+        <div class="left-slide">-</div>
+        <div class="right-slide">+</div>
     </div>
+    <!--dfeff-->
     <div class="banner">FAITES VOS HEBERGEMENTS A DE MEILLEURS PRIX</div>
     <div class="texts">
     <div class="text">
@@ -142,6 +168,39 @@
             </div>
                 
     </footer>
+    <script language = "javascript">
+        var index=0;
+
+var slides = document.querySelector(".slider-items").children;
+var nextslide = document.querySelector(".right-slide");
+var prevslide = document.querySelector(".left-slide");
+var totalslides = slides.length;
+nextslide.onclick = function () {
+    next("next");
+}
+prevslide.onclick = function () {
+    next("prev");
+}
+function next(direction) {
+    if (direction == "next") {
+        index++;
+        if (index == totalslides) {
+            index = 0;
+        }
+    } else {
+        if (index == 0) {
+            index = totalslides-1;
+        }else{
+            index--;
+        }
+    }
     
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        
+    }
+    slides[index].classList.add("active");
+}
+    </script>
 </body>
 </html>
