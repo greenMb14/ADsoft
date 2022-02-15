@@ -1,14 +1,13 @@
-var slides, nextslide, prevslide, totalslides;
-let index=0;
+var index=0;
 
-slides = document.querySelector(".slider-items").children;
-nextslide = document.querySelector("right-slide");
-prevslide = document.querySelector(".left-slide");
-totalslides = slides.length;
+var slides = document.querySelectorAll(".item");
+var nextslide = document.querySelector(".right-slide");
+var prevslide = document.querySelector(".left-slide");
+var totalslides = slides.length;
 nextslide.onclick = function () {
     next("next");
 }
-nextslide.onclick = function () {
+prevslide.onclick = function () {
     next("prev");
 }
 function next(direction) {
@@ -21,12 +20,13 @@ function next(direction) {
         if (index == 0) {
             index = totalslides-1;
         }else{
-            index--
+            index--;
         }
     }
-    slides[index].classList.add("active");
+    
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove("active");
         
     }
+    slides[index].classList.add("active");
 }

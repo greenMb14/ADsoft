@@ -9,7 +9,7 @@ ul{
 .menuderoulant li{
     display: flex;
     float: left;
-    width: 150px;
+    width: 100px;
    padding: 10px;
    margin-top: 2%;
    position: relative;
@@ -28,12 +28,12 @@ ul{
     background: white;
     margin-left: -20%;
     margin-top: 15%; 
-    width: 90%;
+    width: 100%;
     position: absolute;
 }
 #sousmenu li:hover{
     background-color: rgb(175, 174, 174);
-    width: 87%;
+    width: 83.5%;
     
 }
 #sousmenu li a{
@@ -51,7 +51,7 @@ ul{
 }
 
 .aa{
-    margin-left: 23%;
+    margin-left: 40%;
 }
 .cc{
     margin-left: 70%;
@@ -74,38 +74,65 @@ header{
 }
 
 @media screen and (max-width:1350px){
-    .bb4{
-       
-        visibility: hidden;
-    }
-}
-@media screen and (max-width:1140px){
-    .bb3{
-        
-        visibility: hidden;
-    }
-}
-@media screen and (max-width:950px){
-    .bb2{
-        
-        visibility: hidden;
-    }
-}
-@media screen and (max-width:800px){
-    .bb1{
-        visibility: hidden;
-    }
-}
-@media screen and (max-width:600px){
     .aa{
-        visibility: hidden;
+       margin-left: 38%;
+    }
+}
+@media screen and (max-width:1300px){
+    .aa{
+       margin-left: 38%;
+    }
+    .menuderoulant li{
+        padding: 12px;
+    }
+}
+@media screen and (max-width:1250px){
+    .aa{
+       margin-left: 28%;
+    }
+    .menuderoulant li{
+        padding: 12px;
+    }
+}
+@media screen and (max-width:1100px){
+    .aa{
+       margin-left: 20%;
+    }
+    .menuderoulant li{
+        padding: 13px;
+    }
+}
+@media screen and (max-width:1024px){
+    .aa{
+        margin-left: 25%;
+    }
+    .menuderoulant li{
+        padding: 10px;
+    }
+    .menuderoulant li a{
+        font-size: 13px;
+        margin-top: 10%;
     }
     .cc{
-        margin-left: 115%;
         margin-top: 5%;
-        font-size: 1.2em;
+        margin-left: 20%;
     }
-    
+} 
+@media screen and (max-width:1000px){
+    .aa{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width:865px){
+    .aa{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:790px){
+    .menuderoulant li{
+        padding: 0px;
+        margin-top: 4%;
+    }
 }
 .texts{
     background:url(images/font6.png) no-repeat;
@@ -145,7 +172,7 @@ header{
 
 .section{
     
-    background: url("images/pay.jpg") no-repeat;
+    background: url("images/lumiere1.jpg") no-repeat;
     width: 100%;
     background-size: cover;
 }
@@ -203,7 +230,7 @@ header{
     grid-gap: 10px; 
 }
 footer{
-    background: #333;
+    background: rgb(88, 88, 88);
     color: #f1f1f1;
     
 }
@@ -223,8 +250,9 @@ footer{
     font-size: 25px;
     padding-bottom: 20px;
     padding-top: 30px;
-    color: black;
+    color: rgb(3, 3, 41);
     font-family: lucida sans;
+    opacity: 0.5;
 }
 .footer-contact p{
     padding: 5px 0;
@@ -346,7 +374,7 @@ label{
 #toggle{
     display: none;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:650px){
     .content{
         display: none;
     }
@@ -427,7 +455,7 @@ label{
         font-size: 15px;
     }
     .grid-items{
-        width: 200px;
+        width: 224px;
     }
 }
 @media only screen and (max-width:450px){
