@@ -285,7 +285,7 @@ footer{
     }
 }
 
-.grid-items{
+.grid-items, .grid-items1, .grid-items2{
     width: 300px;
     height: 300px;
     
@@ -516,16 +516,16 @@ label{
 @media only screen and (max-width:600px){
     .banner{
         display: block;
-        background: url(images/pay1.jpg) no-repeat;
+        background: url(images/pro.jfif) no-repeat;
         width: 100%;
         padding-top: 20%;
         padding-bottom: 15%;
         background-size: cover;
         text-align: center;
         color: black;
-        font-family: lucida sans;
+        font-family: cursive;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
     }
     .section{
         display: none;
@@ -544,8 +544,11 @@ label{
     .liste-media a{
         font-size: 15px;
     }
-    .grid-items{
+    .grid-items, .grid-items1, .grid-items2{
         width: 200px;
+    }
+    .grid-items1, .grid-items2{
+        display: none;
     }
 }
 @media only screen and (max-width:450px){
@@ -567,7 +570,7 @@ label{
     .footer{
         grid-template-columns: repeat(auto-fill, 188px);
     }
-    .grid-items{
+    .grid-items, .grid-items1, .grid-items2{
         width: 188px;
         height: 300px;
     }

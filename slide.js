@@ -30,7 +30,23 @@ function next(direction) {
     }
     slides[index].classList.add("active");
 }
-var j=0,image = [],time=5000;
+
+function change() {
+    if (index < 2) {
+        index++;
+    }else{
+        index=0;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        
+    }
+    slides[index].classList.add("active");
+
+    setTimeout("change()",7000);
+}
+window.setTimeout("change()",10000);
+/*var j=0,image = [],time=5000;
 image[0] = slides[0].children[0].src;
 image[1] = slides[1].children[0].src;
 image[2] = slides[2].children[0].src;
@@ -47,4 +63,4 @@ function change() {
 
     setTimeout("change()",time);
 }
-    window.onload = change();
+    window.onload = change();*/
