@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background: url(images/Sans-titre-3.gif);
+}
 ul{
     list-style-type: none;
 }
@@ -414,13 +416,17 @@ header{
         display: grid;
     }
 }
-.grid-item1 img, .grid-item2 img, .grid-item3 img{
-    border-radius: 10%;
+.grid-item1 img, .grid-item2 img {
+    border-radius: 5%;
 }
+
 .grid-item1:hover img, .grid-item2:hover img, .grid-item3:hover img{
     border-radius: 0%;
     transition: border-radius 2.5s;
 }
+/* .back{
+    background: url(images/Sans-titre-2.gif);
+} */
 
 .footer{
     max-width: 1300px;

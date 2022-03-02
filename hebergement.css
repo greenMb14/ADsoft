@@ -3,6 +3,9 @@
     padding: 0;
     
 }
+body{
+    background: url(images/Sans-titre-2.gif);
+}
 ul{
     list-style-type: none;
 }
@@ -291,6 +294,7 @@ header{
         background-size: cover;
     }   
 }*/
+
 
 .slider .slider-items{
     max-width: 70%;
