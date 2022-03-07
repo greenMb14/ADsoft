@@ -70,34 +70,34 @@
          </form>
     </div>
     <div class="me"><h2>NOS SERVICES...</h2></div>
-        <article style="background-color:white;">
+        <div class="art">
             <div class="we">
                 <h3>SITE WEB</h3>
                 <p><small>Creation Et Hebergement De Site Web Dynamique et Responsives.</small></p>
                 <a href="site.html" class="button-2">plus d'infos</a>
             </div>
-        </article>
-        <article style="background-color:white;">
+       
+        
             <div class="we">
                 <h3>SOCIAL MEDIA</h3>
                 <p><small>Nous nous occupons du vous virtuelle comme il se doit.</small></p>
                 <a href="social.html" class="button-2">plus d'infos</a>
             </div>
-        </article>
-        <article style="background-color:white;">
+       
+       
                 <div class="we">
                     <h3>GRAPHISME</h3>
                     <p><small>Nous rendons vos pensees imaginaires reelles et possibles.</small></p>
                     <a href="graphique.html" class="button-2">plus d'infos</a>
                 </div>
-        </article>
-            <article style="background-color:white;">
+      
+            
                 <div class="we">
                     <h3>AUDIO-VISUELLE</h3>
                     <p><small>Le meilleur dans la qualite de vos realisations photos et videos.</small></p>
                     <a href="production.html" class="button-2">plus d'infos</a>
                 </div>
-            </article>
+            </div>
         <div class="clear">
         <div id="slid">
             <figure>
@@ -130,7 +130,6 @@
         </div>   
     </section>
     <div class="lui"><h2>NOS PARTENAIRES...</h2></div>
-    <div class="part">
         <div class="avec">
             <div class="content1">
                 <h2>Le meilleur sponsoring.</h2>
@@ -140,20 +139,22 @@
                 <img src="part9.jpg"/>
             </div>
         </div>
-    </div>
     <div class="clear"></div>
     <div class="lou"><h2>Faites Nous Confiance...</h2></div>
-   <a href="#" class="to-top">^</a>
+  <div id="scrollUp">
+<a href="#top"><img src="top.png"/></a>
+</div>
             <script language="javascritp">
-                const toTop= document.querySelector('.to-top');
-                window.addEventListener = ( "scroll-up", () => {
-                    if(window.pageYOFFset > 20){
-                        button.classList.add('active');
-                    }else{
-                        button.classList.remote('active');
-                    }
-
-                });
+                $(function () {
+        $(window).scroll(function () { //Fonction appelée quand on descend la page
+            if ($(this).scrollTop() > 200 ) {  // Quand on est à 200pixels du haut de page,
+                $('#scrollUp').css('right','10px'); // Replace à 10pixels de la droite l'image
+            } else { 
+                $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
+            }
+        });
+    });
+});
             </script>
     <footer>
         <div class="footer">

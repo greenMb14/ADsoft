@@ -237,12 +237,6 @@ label{
     }
 }
 
-@media screen and (max-width: 1500px){
-	body{
-		width: 550px;
-           
-	}
-}
 
 /*first*/
 
@@ -267,7 +261,7 @@ label{
 }
 form
 {
-	margin-left: 520px;
+	padding-left: 520px;
     padding-top: 20px;
     
 }
@@ -314,14 +308,15 @@ strong
 	margin-top: 40px;
 	
 }
-/*@media screen and (max-width: 1500px){
+
+@media screen and (max-width: 1380px){
     .first{
         background-image: url("jk.jpg");
         background-size: cover;
         background-position: center;
         }
     form{
-        width: 80%;
+        width: 60%;
     }
     form input{
         margin-left: -120px;
@@ -330,23 +325,7 @@ strong
 		margin-left: 10px;
 	}
 }
-@media screen and (max-width: 1368px){
-    .first{
-        background-image: url("jk.jpg");
-        background-size: cover;
-        background-position: center;
-        }
-    form{
-        width: 60%;
-    }
-    form input{
-        margin-left: -250px;
-	}
-	form .button-3{
-		margin-left: 10px;
-	}
-}
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1140px){
     .first{
         background-image: url("jk.jpg");
         background-size: cover;
@@ -354,89 +333,65 @@ strong
         }
     form{
         width: 40%;
+        margin-left: -120px;
     }
-    form input{
-        margin-left: -350px;
-	}
-	form .button-3{
-		margin-left: 10px;
-	}
+    form .button-3{
+        margin-top: 10px;
+        width: 425px;
+       margin-left: -120px;
+    }
+	
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 950px){
+    body{
+        width: none;
+    }
     .first{
         background-image: url("jk.jpg");
         background-size: cover;
         background-position: center;
         }
     form{
-        width: 60%;
+        width: 40%;
+        margin-left: -170px;
     }
     form input{
-        margin-left: -400px;
+        
+        width: 200px;
 	}
 	form .button-3{
-		margin-left: 10px;
+        width: 425px;
 	}
 }
 @media screen and (max-width: 800px){
-    body{
-        width: 500px;
-    }
+   
     .first{
         background-image: url("jk.jpg");
         background-size: cover;
         background-position: center;
         }
     form{
-		display: flex;
-		flex-direction: column;
+		margin-left: -230px;
 	}
-	form input{
-        margin-left: -405px;
-	}
-	form .button-3{
-		width: 110px;
-		margin-top: 5px;
-		width: 323px;
-        margin-left: -435px;
-	}
-    form  #f{
-		width: 300px;
-        margin-left: -435px;
-	}
+	
 
    
-}*/
-@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 650px) {
+   
 	.first{
 	background-image: url("jk.jpg");
 	background-size: cover;
 	background-position: center;
 	}
-	.first h2{
-		font-size: 2.2em;
-	}
-	.first p{
-		font-size: 1.2em;
-	}
+	
 	form{
-		display: flex;
-		flex-direction: column;
-	}
-	form input{
-        margin-left: -405px;
-	}
-	form .button-3{
-		width: 110px;
-		margin-top: 5px;
-		width: 323px;
-	}
-    form  #f{
-		width: 300px;
+		margin-left: -300px;
 	}
 
+
 } 
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
 	.first{
 	background-image: url("jk.jpg");
 	background-size: cover;
@@ -477,29 +432,34 @@ strong
 	margin-bottom: 20px;
 	font-family: 'Courier New', Courier, monospace;
 }
-article
+.art
 {
-	width: 300px;
-	height: 270px;
-	float: left;   
-	border-radius: 10px;
-	padding-left: 10px;
-	margin-left: 68px;
-	margin-top: 100px;
-	box-shadow: 0px 10px 10px 0px rgb(204, 202, 202);
-	
+	width: 80vw;
+	height: auto;
+	display: grid;   
+	margin: 120px 150px 40px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	justify-content: center;
+	grid-gap: 20px;
+	background-image: url(serv5.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .we
 {
-	height: 85%;
-	width: 190px;
-	padding: 20px;
-	text-align: center;
+	width: 250px;
+	height: 270px; 
 	background: lightblue;
-
+	margin-bottom: 50px;
+	border-radius: 5%;
+    margin-top: 50px;
+    margin-left: 20px;
+    
+   
 }
-article h3
+.art h3
 {
     border-bottom: 1px solid rgb(248, 244, 244);
     padding-bottom: 20px;
@@ -507,11 +467,13 @@ article h3
     margin-bottom: 25px;
     text-align: center;
 	margin-top: 30px;
+    
 }
 .we p
 {
 	text-align: center;
 	padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .button-2 
@@ -522,6 +484,7 @@ article h3
 	border-radius: 3px;
 	padding-bottom: 10px;
 	margin-top: 15px;
+    margin-left: 50px;
 	text-decoration: none;
 	transition: 1.5s;
 	
@@ -531,11 +494,85 @@ article h3
 	background-color: #02b8dd;
 	
 }
-@media screen and (max-width: 600px) {
-	article{
-		margin-left: 55px;
-		width: 430px;
-	}
+
+@media screen and (max-width: 1380px){
+
+    .art
+{
+     width: 70vw;
+     height: auto;
+	display: grid;   
+	margin: 120px 200px 40px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 400px);
+	justify-content: center;
+	grid-gap: 20px;
+    background: none;
+}
+
+.we
+{
+	width: 350px;
+	height: 320px; 
+	background: lightblue;
+	margin-bottom: 50px;
+	border-radius: 5%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.button-2 
+{
+	padding-bottom: 10px;
+	margin-top: 55px;
+    margin-left: 100px;
+	
+}
+}
+@media screen and (max-width: 1140px){
+    .art
+    {
+         width: 70vw;
+         height: auto;
+        display: grid;   
+        margin: 120px 140px 40px auto;
+        grid-template-columns: repeat(auto-fill, 300px);
+        justify-content: center;
+        grid-gap: 20px;
+        background-image: url(serv3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+   
+    .we
+    {
+        width: 300px;
+        height: 350px; 
+        margin-bottom: 50px;
+        border-radius: 5%;
+        margin-top: 50px;
+        margin-left: -5px;
+    }
+}
+@media screen and (max-width: 950px){
+    .art{
+        width: 75vw;
+        margin-left: 110px;
+        background-image: url(serv2.jpg);
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .art{
+        margin-left: 90px;
+        background-image: url(serv3.jpg);
+    } 
+}
+@media screen and (max-width: 650px){
+    .art{
+        margin-left: 70px;
+    }
 }
 
 /*slid*/
@@ -547,10 +584,10 @@ article h3
 }
 #slid
 {
-    padding-top: 100px;
+    margin-top: 50px;
 	overflow: hidden;
 	margin-top: 100px;
-	width: 80%;
+	width: 70%;
 	height: 500px;
 	
 }
@@ -610,6 +647,7 @@ article h3
     background-repeat: no-repeat;
     height: 100px;
     padding-top: 70px;
+    margin-left: 20px;
 	margin-top: 100px;
     text-align: center;
     font-size: 2.5em;
@@ -617,7 +655,7 @@ article h3
 	margin-bottom: 65px;
     text-shadow: 5px 15px 8px rgb(195, 187, 228);
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    
+
     
 }
 .grille
@@ -657,21 +695,38 @@ article h3
    z-index: 2;
    border-radius: 0%;
 }
-@media screen and (max-width: 600px){
-	#fir h2{
-		margin-top: -150px;
-		margin-left: 87px;
-	}
+@media screen and (max-width: 1380px){
+	.sus h2{
+        background: #444;
+        margin-left: 150px;
+        padding-top: 50px;
+    }
 	.grille{
-		margin-right: 102px;
-	}
-	.grid-item{
-		width: 400px;
-	}
-	.grid-item img{
-		width: 400px;
-	}
+        margin-left: 160px;
+    }
 	
+}
+@media screen and (max-width: 1140px){
+    .sus h2{
+        margin-left: 100px;
+    }
+    .grille{
+        margin-left: 110px;
+    }
+}
+@media screen and (max-width: 950px){
+    .sus h2{
+        margin-left: 85px;
+        background-color: rgb(30, 17, 63);
+    }
+    .grille{
+        margin-left: 110px;
+    }
+}
+@media screen and (max-width: 650px){
+    .grille{
+        margin-left: 90px;
+    }
 }
 
 /*marquee*/
@@ -679,6 +734,7 @@ article h3
 .lui h2
 {
 	margin-top: 100px;
+    width: 90vw;
     text-align: center;
     font-size: 2.5em;
 	color: black;
@@ -689,7 +745,7 @@ article h3
 	color: white;
 	background-color: rgb(19, 10, 71);
 }
-.part h2
+.content1 h2
 {
 	font-size: 3em;
 	margin-left: 50px ;
@@ -697,7 +753,7 @@ article h3
 	color: rgb(21, 21, 70);
 	
 }
-.part p
+.content1 p
 {
 	font-size: 1.2em;
 	font-family: fantasy;
@@ -707,17 +763,13 @@ article h3
 	color: rgb(21, 21, 70)
 	
 }
-.part
-{
-	display: block;
-	justify-content: center;
-	align-items: center;
-	margin-top: 70px;
 
-}
-.part .avec
+.avec
 {
 	display: flex;
+    justify-content: center;
+	align-items: center;
+	margin-top: 70px;
 }
 .imgb
 {
@@ -727,23 +779,75 @@ article h3
 {
 	box-shadow: 0px 8px 8px 0px rgb(144, 151, 187);
 }
-@media screen and (max-width: 600px){
-	.part{
-		display: block;
+@media screen and (max-width: 1380px){
+	.lui{
+		width: 60vw;
+        margin-left: 10px;
 	}
+    .content1{
+        width: 50vw;
+    }
     .imgb {
 		 margin-top: 50px;
-		 width: 400px;
-		 margin-left: 43px;
+		 width: 300px;
+         padding-top: 120px;
+         margin-left: 20px;
 	 }
 	.imgb img{
 		width: 465px;
+        height: 100%;
 	}
-	.part .avec
-	{
-		display: block;
-	}	
-		
+    .avec{
+        margin-right: 180px;
+    }
+	
+}
+@media screen and (max-width: 1140px){
+    .lui{
+        margin-left: -10px;
+    }
+    .content1 p{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 950px){
+       .lui{
+           margin-left: -10px;
+       }
+       .content1 p{
+           font-size: 0.7em;
+       }
+       .content1 h2{
+           font-size: 2.5em;
+       }
+}
+@media screen and (max-width: 800px){
+    .content1{
+        margin-left: 30px;
+    }
+    .content1 h2{
+     font-size: 2em;
+    }
+    .content1 p{
+        font-size: 0.4em;
+    }
+      .imgb img{
+          width: 400px;
+          margin-left: 50px;
+      }
+}
+@media screen and (max-width: 650px){
+    .lui{
+       margin-left: -25px;
+    }
+    .content1{
+        margin-left: 100px;
+    }
+    
+    .imgb img{
+        width: 300px;
+        margin-left: 70px;
+    }
 }
 
 .clear
@@ -865,25 +969,17 @@ footer{
 }
 /*button*/
 
-.to-top
+#scrollUp
 {
-    margin-left: 1500px;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: #02b8dd;
-    outline: none;
-    pointer-events: auto;
-   align-items: center;
-   justify-content: center;
-   display: flex;
- 
-  
+position: fixed;
+bottom : 10px;
+right: 10px;
+opacity: 0.6;
 }
- .to-top.active
- {
-     pointer-events: auto;
- }
+#scrollUp a img
+{
+    width:50px;
+}
  html{
      scroll-behavior: smooth;
  }
