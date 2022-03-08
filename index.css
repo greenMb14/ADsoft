@@ -263,7 +263,6 @@ form
 {
 	padding-left: 520px;
     padding-top: 20px;
-    
 }
 
 input[type="text"]
@@ -273,7 +272,7 @@ input[type="text"]
    margin-right: 20px;
    border: 2px solid #ddd;
    border-radius: 3px;
-   width: 400px;
+   width: 25vw;
    line-height: 25px;
 }
 .button-3
@@ -288,7 +287,6 @@ input[type="text"]
 	line-height: 35px;
 	padding-top: 0.4%;
 	transition: 1.5s;
-	
 }
 .button-3:hover
 {
@@ -315,9 +313,7 @@ strong
         background-size: cover;
         background-position: center;
         }
-    form{
-        width: 60%;
-    }
+    
     form input{
         margin-left: -120px;
 	}
@@ -332,36 +328,31 @@ strong
         background-position: center;
         }
     form{
-        width: 40%;
         margin-left: -120px;
     }
     form .button-3{
-        margin-top: 10px;
-        width: 425px;
+       
        margin-left: -120px;
+       width: 28vw;
     }
 	
 }
 @media screen and (max-width: 950px){
-    body{
-        width: none;
-    }
+
     .first{
         background-image: url("jk.jpg");
         background-size: cover;
         background-position: center;
         }
     form{
-        width: 40%;
         margin-left: -170px;
     }
-    form input{
-        
-        width: 200px;
-	}
-	form .button-3{
-        width: 425px;
-	}
+    
+    form .button-3{
+        width: 28vw;
+     }
+    
+    
 }
 @media screen and (max-width: 800px){
    
@@ -401,6 +392,10 @@ strong
         form{
             margin-left: -350px;
         }
+        form .button-3{
+            width: 25vw;
+         }
+        
 }
 @media screen and (max-width: 500px) {
 	.first{
@@ -408,12 +403,39 @@ strong
 	background-size: cover;
 	background-position: center;
 	}
+    .first h2{
+        font-size: 2em;
+    }
 	
 	form{
-        margin-left: -370px;
+        margin-left: -280px;
+        margin-top: -30px;
 	}
-
+    form .button-3{
+        width: 32vw;
+     }
 } 
+@media screen and (max-width: 430px){
+    .first h2{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 330px){
+        .first h2{
+            font-size: 1.8em;
+            padding-top: 130px;
+        }
+        .first p{
+            font-size: 1.3em;
+        }
+        form{
+            margin-left: -295px;
+        }
+        form .button-3{
+            width: 33.5vw;
+         }
+}
+
 
 /*main*/
 
@@ -573,6 +595,50 @@ strong
         margin-left: 50px;
     }
 }
+@media screen and (max-width: 430px){
+        .art{
+            background: none;
+            margin-left: 70px;
+        }
+        .we
+            {
+                width: 250px;
+                height: 320px; 
+            }
+            .button-2 
+            {
+                margin-left: 70px;
+                
+            }
+}
+@media screen and (max-width: 330px){
+    .art{
+        background: none;
+        margin-left: 100px;
+    }
+    .we
+    {
+        width: 180px;
+        height: 320px; 
+        
+    }
+    .button-2 
+            {
+                margin-left: 20px;
+                
+            }
+}
+@media screen and (max-width: 230px){
+    .art{
+        background: none;
+    }
+    .we
+    {
+        width: 210px;
+        height: 250px; 
+        
+    }
+}
 
 /*slid*/
 .clear{
@@ -632,6 +698,16 @@ strong
 	100%{
 		left: -400%;
 	}
+}
+@media screen and (max-width: 430px){
+       #slid{
+           margin-left: -30px;
+       }
+}
+@media screen and (max-width: 330px){
+    #slid{
+        margin-left: 0px;
+    }
 }
 
 /*thirst*/
@@ -739,6 +815,43 @@ strong
     .grille{
         margin-left: 70px;
     }
+}
+@media screen and (max-width: 430px){
+    .sus{
+        margin-left: -10px;
+      
+    }
+    .sus h2{
+       font-size: 1.4em;
+       padding-top: 50px;
+    }
+    .grille{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 330px){
+    .sus{
+        margin-top: -350px;
+      
+    }
+    .sus h2{
+        padding-top: 50px;
+       font-size: 1.2em;
+       background: none;
+       margin-left: 60px;
+    }
+    .grille{
+        margin-left: 75px;
+       margin-top: -100px;
+    }
+        .grid-item
+    {
+        width: 100px;
+    }
+    .grid-item img
+    {
+        width: 200px;
+    }	
 }
 
 /*marquee*/
@@ -911,6 +1024,51 @@ strong
     }
     
 }
+@media screen and (max-width: 430px){
+    .lui{
+        width: 10vw;
+        margin-left: -40px;
+    }
+    .lui h2{
+       font-size: 1.5em;
+     }
+    .content1 h2{
+        font-size: 1.5em;
+    }
+    .content1 p{
+        font-size: 1em;
+        width: 200px;
+       
+    }
+    .imgb img{
+        width: 300px;
+        margin-left: 20px;
+    }
+    
+}
+@media screen and (max-width: 330px){
+    .lui{
+        width: 10vw;
+        margin-left: -38px;
+    }
+    .lui h2{
+       font-size: 1.2em;
+     }
+    .content1 h2{
+        font-size: 1.2em;
+        margin-left: 30px;
+    }
+    .content1 p{
+        font-size: 1em;
+        width: 200px;
+        margin-left: 10px;
+    }
+    .imgb img{
+        width: 200px;
+        margin-left: 20px;
+    }
+    
+}
 
 .clear
 {
@@ -924,6 +1082,11 @@ strong
 	color: black;
 	margin-bottom: 35px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 330px){
+    .lou h2{
+        font-size: 1.5em;
+    }
 }
 /*footer*/
 
