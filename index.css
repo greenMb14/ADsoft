@@ -472,16 +472,19 @@ strong
         background-position: center;
         }
     form{
-        margin-left: -120px;
+        margin-left: 5px;
+    }
+    form #f{
+       display: block;
     }
     form .button-3{
-       
+       width: 27.5vw;
+       margin-top: 10px;
        margin-left: -120px;
-       width: 28vw;
     }
 	
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 955px){
 
     .first{
         background-image: url("jk.jpg");
@@ -489,12 +492,8 @@ strong
         background-position: center;
         }
     form{
-        margin-left: -170px;
+        margin-left: -63px;
     }
-    
-    form .button-3{
-        width: 28vw;
-     }
     
     
 }
@@ -506,7 +505,7 @@ strong
         background-position: center;
         }
     form{
-		margin-left: -230px;
+		margin-left: -123px;
 	}
 	
 
@@ -521,9 +520,11 @@ strong
 	}
 	
 	form{
-		margin-left: -300px;
+		margin-left: -180px;
 	}
-
+    form .button-3{
+        width: 29vw;
+     }
 
 } 
 @media screen and (max-width: 600px){
@@ -534,11 +535,8 @@ strong
         }
         
         form{
-            margin-left: -350px;
+            margin-left: -207px;
         }
-        form .button-3{
-            width: 25vw;
-         }
         
 }
 @media screen and (max-width: 500px) {
@@ -552,31 +550,43 @@ strong
     }
 	
 	form{
-        margin-left: -280px;
-        margin-top: -30px;
+        margin-left: -235px;
 	}
     form .button-3{
-        width: 32vw;
+        width: 30vw;
      }
+    
 } 
 @media screen and (max-width: 430px){
     .first h2{
         font-size: 1.8em;
     }
+    form{
+        margin-left: -288px;
+	}
+    #f{
+        width: 40vw;
+     }
+    form .button-3{
+        width: 46vw;
+     }
 }
 @media screen and (max-width: 330px){
         .first h2{
             font-size: 1.8em;
-            padding-top: 130px;
+           
         }
         .first p{
             font-size: 1.3em;
         }
         form{
-            margin-left: -295px;
+            margin-left: -327px;
         }
+        #f{
+            width: 40vw;
+         }
         form .button-3{
-            width: 33.5vw;
+            width: 48vw;
          }
 }
 
@@ -616,7 +626,6 @@ strong
 	border-radius: 5%;
     margin-top: 50px;
     margin-left: 20px;
-    
    
 }
 .art h3
@@ -627,7 +636,6 @@ strong
     margin-bottom: 25px;
     text-align: center;
 	margin-top: 30px;
-    
 }
 .we p
 {
@@ -695,7 +703,7 @@ strong
          width: 70vw;
          height: auto;
         display: grid;   
-        margin: 120px 140px 40px auto;
+        margin: 120px 163px 40px auto;
         grid-template-columns: repeat(auto-fill, 300px);
         justify-content: center;
         grid-gap: 20px;
@@ -715,7 +723,7 @@ strong
         margin-left: -5px;
     }
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 955px){
     .art{
         width: 75vw;
         margin-left: 110px;
@@ -734,15 +742,20 @@ strong
         margin-left: 70px;
     }
 }
+@media screen and (max-width: 600px){
+    .art{
+        margin-left: 60px;
+    }
+}
 @media screen and (max-width: 500px){
     .art{
-        margin-left: 50px;
+        margin-left: 55px;
     }
 }
 @media screen and (max-width: 430px){
         .art{
             background: none;
-            margin-left: 70px;
+            margin-left: 82px;
         }
         .we
             {
@@ -756,9 +769,13 @@ strong
             }
 }
 @media screen and (max-width: 330px){
+    .me h2{
+        font-size: 1.5em;
+    }
     .art{
         background: none;
         margin-left: 100px;
+        margin-top: 100px;
     }
     .we
     {
@@ -768,11 +785,12 @@ strong
     }
     .button-2 
             {
-                margin-left: 20px;
+                margin-left: 25px;
                 
             }
 }
 @media screen and (max-width: 230px){
+    
     .art{
         background: none;
     }
@@ -845,7 +863,7 @@ strong
 }
 @media screen and (max-width: 430px){
        #slid{
-           margin-left: -30px;
+           margin-left: 18px;
        }
 }
 @media screen and (max-width: 330px){
@@ -927,24 +945,46 @@ strong
 }
 @media screen and (max-width: 1140px){
     .sus h2{
-        margin-left: 100px;
-    }
-    .grille{
         margin-left: 110px;
     }
+    .grille{
+        margin-left: 137px;
+    }
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 955px){
     .sus h2{
-        margin-left: 85px;
+        margin-left: 93px;
         background-color: rgb(30, 17, 63);
     }
     .grille{
-        margin-left: 110px;
+        margin-left: 119px;
+    }
+}
+@media screen and (max-width: 800px){
+    .sus h2{
+        margin-left: 77px;
+    }
+    .grille{
+        margin-left: 100px;
     }
 }
 @media screen and (max-width: 650px){
+    .sus{
+        margin-top: -80px;
+    }
+    .sus h2{
+        margin-left: 65px;
+    }
     .grille{
-        margin-left: 90px;
+        margin-left: 87px;
+    }
+}
+@media screen and (max-width: 600px){
+    .sus h2{
+        margin-left: 57px;
+    }
+    .grille{
+        margin-left: 82px;
     }
 }
 @media screen and (max-width: 500px){
@@ -952,17 +992,17 @@ strong
         margin-top: -170px;
     }
     .sus h2{
-        margin-left: 70px;
+        margin-left: 48px;
         padding-top: 20px;
         background-color: #444;
     }
     .grille{
-        margin-left: 70px;
+        margin-left: 73px;
     }
 }
 @media screen and (max-width: 430px){
     .sus{
-        margin-left: -10px;
+        margin-left: -5px;
       
     }
     .sus h2{
@@ -970,7 +1010,7 @@ strong
        padding-top: 50px;
     }
     .grille{
-        margin-left: 50px;
+        margin-left: 67px;
     }
 }
 @media screen and (max-width: 330px){
@@ -1073,22 +1113,35 @@ strong
 }
 @media screen and (max-width: 1140px){
     .lui{
-        margin-left: -10px;
+        margin-left: -2px;
+    }
+    .avec{
+        margin-left: 12px;
     }
     .content1 p{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 955px){
        .lui{
-           margin-left: -10px;
+           margin-left: -11px;
+       }
+       .content1{
+           margin-left: 30px;
        }
        .content1 p{
-           font-size: 0.7em;
+           font-size: 0.8em;
+           width: 300px;
+           padding-top: 30px;
        }
        .content1 h2{
            font-size: 2.5em;
        }
+       .imgb img{
+        width: 365px;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 800px){
     .lui{
@@ -1098,7 +1151,7 @@ strong
         display: block;
     }
     .content1{
-        margin-left: 30px;
+        margin-left: 75px;
     }
     .content1 h2{
      font-size: 2em;
@@ -1109,7 +1162,7 @@ strong
     }
       .imgb img{
           width: 500px;
-          margin-left: 70px;
+          margin-left: 107px;
           margin-top: -90px;
       }
 }
@@ -1138,7 +1191,7 @@ strong
 }
 @media screen and (max-width: 600px){
     .lui{
-        margin-left: -35px;
+        margin-left: -29px;
      }
      .content1 h2{
         font-size: 2em;
@@ -1147,11 +1200,11 @@ strong
     .content1 p{
         font-size: 1em;
         width: 300px;
-        margin-left: 60px;
+        margin-left: 40px;
     }
       .imgb img{
           width: 350px;
-          margin-left: 60px;
+          margin-left: 70px;
           margin-top: -90px;
       }
 }
@@ -1159,19 +1212,22 @@ strong
     .lui{
         margin-left: -35px;
      }
-    .avec{
-        display: block;
-    }
+     .lui h2{
+         font-size: 1.8em;
+     }
+     .content1{
+        margin-left: 20px;
+     }
     .imgb img{
         width: 400px;
-        margin-left: 20px;
+        margin-left: 9px;
     }
     
 }
 @media screen and (max-width: 430px){
     .lui{
         width: 10vw;
-        margin-left: -40px;
+        margin-left: -30px;
     }
     .lui h2{
        font-size: 1.5em;
@@ -1186,7 +1242,7 @@ strong
     }
     .imgb img{
         width: 300px;
-        margin-left: 20px;
+        margin-left: 27px;
     }
     
 }
@@ -1209,7 +1265,7 @@ strong
     }
     .imgb img{
         width: 200px;
-        margin-left: 20px;
+        margin-left: 7px;
     }
     
 }
@@ -1226,6 +1282,11 @@ strong
 	color: black;
 	margin-bottom: 35px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 430px){
+    .lou h2{
+        font-size: 1.8em;
+    }
 }
 @media screen and (max-width: 330px){
     .lou h2{
