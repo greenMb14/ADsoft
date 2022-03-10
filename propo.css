@@ -419,8 +419,9 @@ label{
     border-radius: 500px;
     float: left;
     shape-outside: circle();
-    padding: 50px;
+    padding: 20px;
     margin: 50px ;
+    
 }
 @media screen and (max-width: 750px){
     .slider{
@@ -431,28 +432,26 @@ label{
 .histo{
     background: white;
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
-    width: 75%;
+    width: 80%;
     height: auto;
-    margin: 15% auto;
-    padding-top: 170px;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 150px auto;
     
 }
-/* .histo p{
-    margin-block-start: 12px;
-    margin-block-end: 1px;
-} */
+.histo p{
+    margin: 50px;
+}
 .histo h1{
     text-align: center;
-    margin-bottom: 50px;
     font-size: 2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: white;
     box-shadow: 0px 2px 10px 1px lightblue;
     padding: 20px;
-    border-radius: 60px;
+    border-radius: 0px 0px 60px 60px;
     font-weight: normal;
+    margin: 50px;
+    
+    
 }
 
 .grille{
@@ -464,6 +463,9 @@ label{
     grid-template-columns: repeat(auto-fill, 250px);
     justify-content: center;
     grid-gap: 10px; 
+    grid-column: auto;
+    grid-row: auto;
+    
 }
 .grid-item{
     width: 250px;
@@ -481,60 +483,66 @@ label{
 }
 
 
-.h1-grille{
-    
-    padding-bottom: 8%;
-    height: 50px;
-    margin: 100px 0px;
-    text-align: center;
-    font-size: 1.5em;
-    text-shadow: 5px 15px 8px rgb(145, 144, 144);
-    font-weight: normal;
+.h1-grille1 h1{
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+    box-shadow: 0px 2px 10px 1px lightblue;
+    padding-left: 15%;
+    border-radius: 60px;
+    font-weight: normal;
+    margin: 120px 50px;
+   
+   
+}
+hr{
+    border-radius: 5px;
+    margin-top: 2%;
+}
+.h1-grille2 hr{
+    margin-left: 30%;
+}
+.h1 hr{
+     margin-left: 15%;
+ }
+.h1-grille2 h1{
+    text-align: right;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+    box-shadow: 0px 2px 10px 1px lightblue;
+    padding-right: 15%;
+    border-radius: 60px;
+    font-weight: normal;
+    margin: 100px 50px;
+    
 }
 .grille2{
-    max-width: 1100px;
+    max-width: 900px;
     width: 100%;
     height: auto;
     margin: 0px auto 230px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 10px;
+    padding-bottom: 20%;
 }
-.grid-item1{
-    width: 400px;
-    height: 300px;
+.grid-iten{
+    width: 300px;
+    height: 200px;
     position: relative;
 }
-.grid-item2{
-    width: 400px;
-    height: 300px;
-    position: relative;
-}
-.grid-item4{
-    width: 400px;
-    height: 300px;
-    position: relative;
-    display:none;
-}
+
 .grid-item1 img, .grid-item2 img, .grid-item4 img{
     border-radius: 3%;
 }
-.grid-item3{
-    width: 810px;
-    height: 400px;
-    position: relative;
-}
-@media screen and (max-width: 900px){
-    .grid-item3{
-        display: none;
-    }
-    .grid-item4{
-        display: block;
-    }
-    
-}
+
+
+
 .over{
     position: absolute;
     top: 0;
@@ -601,18 +609,7 @@ footer{
     background: #333;
     color: #f1f1f1;
     opacity: 0.8;
-    animation: couleur 5s infinite;
-}
-@keyframes couleur{
-    25%{
-        background: rgb(34, 73, 71);
-    }
-    50%{
-        background: rgb(60, 38, 82);
-    }
-    100%{
-        background: #333;
-    }
+    
 }
 
 .grid-items, .grid-items1, .grid-items2{
