@@ -382,6 +382,41 @@ label{
     }
 }
 
+/*body*/
+
+body
+{
+    background-size: cover;
+    width: none;
+}
+@media screen and (max-width: 800px){
+    body{
+        width: none;
+    }
+}
+@media screen and (max-width: 650px){
+    body{
+        width: none;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        width: none;
+    }
+}
+@media screen and (max-width: 430px){
+    body{
+      background-size: cover;
+      width: none;
+    }
+}
+@media screen and (max-width: 330px){
+    body{
+        background-size: cover;
+        width: none;
+    }
+}
+
 /*first*/
 
 .first
@@ -602,6 +637,7 @@ strong
 	margin-bottom: 20px;
 	font-family: 'Courier New', Courier, monospace;
 }
+
 .art
 {
 	width: 80vw;
@@ -1296,17 +1332,7 @@ strong
 
 /*button*/
 
-#scrollUp
-{
-position: fixed;
-bottom : 10px;
-right: 10px;
-opacity: 0.6;
-}
-#scrollUp a img
-{
-    width:50px;
-}
+
  html{
      scroll-behavior: smooth;
  }

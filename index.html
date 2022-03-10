@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versus</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        #scrollUp
+        {
+        position: fixed;
+        bottom : 10px;
+        right: -100px;
+        opacity: 0.8;
+        }
+        </style>
+         
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+         
+        <script>
+                    jQuery(function(){
+                        $(function () {
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 800 ) { 
+                                    $('#scrollUp').css('right','40px');
+                                } else { 
+                                    $('#scrollUp').removeAttr( 'style' );
+                                }
+         
+                            });
+                        });
+                    });
+        </script>
+
 </head>
 <body>
     
@@ -142,20 +169,9 @@
     <div class="clear"></div>
     <div class="lou"><h2>Faites Nous Confiance...</h2></div>
   <div id="scrollUp">
-<a href="#top"><img src="top.png"/></a>
+<a href="#top"><img src="top.png" width="50px" /></a>
 </div>
-            <script language="javascritp">
-                $(function () {
-        $(window).scroll(function () { //Fonction appelée quand on descend la page
-            if ($(this).scrollTop() > 200 ) {  // Quand on est à 200pixels du haut de page,
-                $('#scrollUp').css('right','10px'); // Replace à 10pixels de la droite l'image
-            } else { 
-                $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
-            }
-        });
-    });
-});
-            </script>
+<div class="clear"></div>
     <footer>
         <div class="footer">
                 <div class="grid-items">
