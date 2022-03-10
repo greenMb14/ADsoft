@@ -397,19 +397,9 @@ footer{
     background: #333;
     color: #f1f1f1;
     opacity: 0.8;
-    animation: couleur 5s infinite;
+    
 }
-@keyframes couleur{
-    25%{
-        background: rgb(34, 73, 71);
-    }
-    50%{
-        background: rgb(60, 38, 82);
-    }
-    100%{
-        background: #333;
-    }
-}
+
 
 .grid-items, .grid-items1, .grid-items2{
     width: 300px;
