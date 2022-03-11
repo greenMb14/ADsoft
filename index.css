@@ -635,7 +635,39 @@ strong
     font-size: 2.5em;
 	color: black;
 	margin-bottom: 20px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.78em;
+     letter-spacing: 10px;
 	font-family: 'Courier New', Courier, monospace;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,90.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4
+
+        
+    }
+}
+.me h2 span{
+    color: royalblue;
+}
+.one 
+{
+  margin-top: 30px;
+  box-shadow: 0px 4px 0px 8px lightblue;
+  border-radius: 10px;
 }
 
 .art
@@ -648,9 +680,7 @@ strong
 	grid-template-columns: repeat(auto-fill, 300px);
 	justify-content: center;
 	grid-gap: 20px;
-	background-image: url(serv5.jpg);
-	background-repeat: no-repeat;
-    background-size: cover;
+	
 }
 
 .we
@@ -673,6 +703,10 @@ strong
     text-align: center;
 	margin-top: 30px;
 }
+.one .we h3
+{
+    padding-top: 15px;
+}
 .we p
 {
 	text-align: center;
@@ -688,7 +722,7 @@ strong
 	border-radius: 3px;
 	padding-bottom: 10px;
 	margin-top: 15px;
-    margin-left: 50px;
+    margin-left: 70px;
 	text-decoration: none;
 	transition: 1.5s;
 	
@@ -725,15 +759,22 @@ strong
     margin-left: 20px;
 }
 
-.button-2 
-{
-	padding-bottom: 10px;
-	margin-top: 55px;
-    margin-left: 100px;
-	
-}
+    .button-2 
+    {
+        padding-bottom: 10px;
+        margin-top: 55px;
+        margin-left: 120px;
+        
+    }
 }
 @media screen and (max-width: 1140px){
+    .one{
+        background-color: none;
+        margin-top: none;
+        box-shadow: none;
+        border-radius: 0px;
+       
+    }
     .art
     {
          width: 70vw;
@@ -743,12 +784,8 @@ strong
         grid-template-columns: repeat(auto-fill, 300px);
         justify-content: center;
         grid-gap: 20px;
-        background-image: url(serv3.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        
     }
-    
-   
     .we
     {
         width: 300px;
@@ -758,19 +795,26 @@ strong
         margin-top: 50px;
         margin-left: -5px;
     }
+    .button-2 
+        {
+            padding-bottom: 10px;
+            margin-top: 55px;
+            margin-left: 90px;
+            
+        }
 }
+    
+    
 @media screen and (max-width: 955px){
     .art{
         width: 75vw;
         margin-left: 110px;
-        background-image: url(serv2.jpg);
     }
     
 }
 @media screen and (max-width: 800px){
     .art{
         margin-left: 90px;
-        background-image: url(serv3.jpg);
     } 
 }
 @media screen and (max-width: 650px){
