@@ -459,12 +459,12 @@ label{
     width: 100%;
     height: auto;
     margin: 30px auto;  
-    display: grid;  
+    display: flex;  
     grid-template-columns: repeat(auto-fill, 250px);
-    justify-content: center;
+    flex-wrap: wrap; 
     grid-gap: 10px; 
-    grid-column: auto;
-    grid-row: auto;
+    
+    justify-content: space-around;
     
 }
 .grid-item{
