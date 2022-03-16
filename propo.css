@@ -434,7 +434,7 @@ label{
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
     width: 80%;
     height: auto;
-    margin: 150px auto;
+    margin: 200px auto;
     
 }
 .histo p{
@@ -455,7 +455,7 @@ label{
 }
 
 .grille{
-    max-width: 1300px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     margin: 30px auto;  
@@ -526,14 +526,14 @@ hr{
     height: auto;
     margin: 0px auto 230px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 400px);
     justify-content: center;
     grid-gap: 10px;
     padding-bottom: 20%;
 }
 .grid-iten{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     position: relative;
 }
 

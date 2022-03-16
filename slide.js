@@ -64,3 +64,17 @@ function change() {
     setTimeout("change()",time);
 }
     window.onload = change();*/
+
+    // bouton up
+    jQuery(function(){
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200 ) { 
+                    $('#scrollUp').css('right','40px');
+                } else { 
+                    $('#scrollUp').removeAttr( 'style' );
+                }
+
+            });
+        });
+    });
