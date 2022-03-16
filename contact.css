@@ -386,15 +386,16 @@ label{
 section
 {
     background:  url(phone1.jpg);
-    height: 90vh;
-    margin-top: 30px;
-    justify-content: space-around;
+    height: 95vh;
+    margin-top: 70px;
+    justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .form 
 {
-   
+   display: flex;
+   justify-content: center;
     background-color: lightblue;
     position: absolute;
     padding: 70px 50px;
@@ -402,23 +403,15 @@ section
     margin-top: 120px;
     padding-left: 150px;
     width: 40vw;
-    height: 50vh;
+    height: 55vh;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
 }
-.form input
-{
-    display: block;
-    margin-top: 20px;
 
-}
-.form textarea
-{
-    margin-top: 20px;
-}
 .form1
 {
-    margin-top: 60px;
-    
+    padding-top: 80px;
+    margin-left: -100px;
 }
 .form1 h2
 {
@@ -434,6 +427,9 @@ section
     line-height: 35px;
     padding-left: 10px;
     border-color: white;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 .form1 textarea
 {
@@ -441,6 +437,8 @@ section
     height: 15vh;
     padding-left: 10px;
     border-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 .form1 .f
 {
@@ -450,27 +448,31 @@ section
     font-size: 1em;
     color: #0b073f;
     border-color: white;
-    background-color: lightblue;
+    background-color: white;
+    border-radius: 10px;
+    transition: 1s;
 }
 .quatre
 {
    display: flex;
+   justify-content: center;
    position: absolute;
    margin-top: -150px;
-   margin-left: -225px;
+   margin-left: -100px;
 }
 .look
 {
     display: flex;
+    justify-content: center;
    width: 115vh;
-   height: 23vh;
+   height: 26vh;
    margin-left: 200px;
 }
 .si
 {
     margin-left: 100px;
     margin-top: 10px;
-    color: lightblue;
+    color: lightblue; 
 }
 .loc 
 {
@@ -486,7 +488,7 @@ section
 }
 .loc p
 {
-    margin-top: 10px;
+    margin-top: 20px;
    margin-left: 40px;
 }
 .num
@@ -515,7 +517,7 @@ section
     margin-left: 10px;
     margin-top: -10px;
     width: 15vw;
-    height: 23vh;
+    height: 26vh;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 .fax  i
@@ -555,89 +557,277 @@ section
    color: black;
 }
 
-/*social*/
- 
-.dir
-{
-    margin-top: 40px;
-    margin-left: 500px;
-    display: flex;
-    flex-direction: row;
+@media screen and (max-width: 1450px){
+    .form{
+        margin-left: 320px;
+    }
+}
+@media screen and (max-width: 1350px){
+    .form{
+        margin-left: 260px;
+    }
+    .si i{
+        margin-left: -10px;
+    }
+    .loc h3{
+        margin-left: 35px;
+    }
+    .loc p{
+        margin-left: 15px;
+    }
+    .num h3{
+      margin-left: -35px;
+    }
+    .num p{
+        margin-left: -70px;
+    }
+    .fax h3{
+        margin-left: -30px;
+    }
+    .fax p{
+        margin-left: -60px;
+    }
+    .mail h3{
+        margin-left: 35px;
+    }
+    .mail p{
+        margin-left: 20px;
+    }
+    .loc{
+        width: 20vw;
+    }
+    .num{
+        width: 20vw;
+    }
+    .fax{
+        width: 20vw;
+    }
+    .mail{
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 1180px){
+    .form{
+        margin-left: 240px;
+    }
+    .form1 h2{
+        margin-left: -70px;
+    }
     
 }
-.dir ul
-{
-    position: relative;
-   display: flex;
+@media screen and (max-width: 1024px){
+    .form{
+        margin-left: 180px;
+    }
+    .form1 h2{
+        margin-left: -100px;
+    }
+    .form1 .f{
+        margin-left: 70px;
+    } 
 }
-.dir ul li
-{
-    position: relative;
-    list-style: none;
+@media screen and (max-width: 950px){
+    .form{
+        margin-left: 155px;
+    }
+    .form1 h2{
+        margin-left: -120px;
+    }
+    .form1 .f{
+        margin-left: 55px;
+    } 
 }
-.dir ul li a
-{
-    position:relative;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 30px;
-    border-radius: 50%;
-    color: #e2e2e2;
-    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
-                2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
+@media screen and (max-width: 800px){
+    .form{
+        margin-left: 130px;
+    }
+    .si i{
+        margin-left: -40px;
+    }
+    .loc h3{
+        margin-left: 35px;
+        font-size: 1em;
+    }
+    .loc p{
+        font-size: 0.9em;
+    }
+    .num h3{
+        margin-left: 0px;
+        font-size: 1.2em;
+      }
+      .num p{
+          margin-left: -85px;
+          font-size: 1em;
+      }
+      .fax h3{
+          margin-left: -30px;
+          font-size: 1.2em;
+      }
+      .fax p{
+          margin-left: -60px;
+      }
+      .mail h3{
+          margin-left: 20px;
+      }
+      .mail p{
+          margin-left: 7px;
+      }
 }
-.dir ul li a:hover
-{
-    color:#999;
-    transform: translateX(-20px);
-    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
-                2px 24px 10px rgba(0, 0, 0, 0.1);
-}
-.dir ul li a .fa
-{
-    color: #fff;
-    position: relative;
-    z-index: 1;
-}
-.dir ul li a:before
-{
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 50px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-}
-.dir ul li:nth-child(1) a::before
-{
-    background: #1877f2;
-}
-.dir ul li:nth-child(2) a::before
-{
-    background: #1da1f2;
-}
-.dir ul li:nth-child(3) a::before
-{
-    background: #25d366;
-}
-.dir ul li:nth-child(4) a::before
-{
-    background: #c32aa3;
-}
-.dir ul li:nth-child(5) a::before
-{
-    background: #ea4c89;
-}
+@media screen and (max-width: 720px){
+    .form{
+        margin-left: 100px;
+    }
+    .form1 h2{
+        font-size: 1.5em;
+    }
+      .form1 .f{
+        margin-left: 45px;
+        font-size: 0.8em;
 
+    }
+}
+@media screen and (max-width: 650px){
+    .form{
+        margin-left: 92px;
+    }
+    .form1 h2{
+        font-size: 1.3em;
+    }
+    .loc h3{
+        margin-left: 25px;
+        font-size: 1em;
+    }
+    .num h3{
+        margin-left: -10px;
+      }
+      .num p{
+          margin-left: -90px;
+          font-size: 0.9em;
+      }
+      .fax p{
+        margin-left: -70px;
+    }
+    .mail h3{
+          margin-left: 10px;
+      }
+    .mail p{
+          font-size: 0.9em;
+      }
+      
+}
+@media screen and (max-width: 600px){
+    .form{
+        margin-left: 65px;
+    }
+    .form1 h2{
+        font-size: 1em;
+    }
+    .si i{
+        margin-left: -50px;
+    }
+    .loc h3{
+        margin-left: 25px;
+        font-size: 0.8em;
+    }
+    .loc p{
+        font-size: 0.8em;
+        margin-left: 10px;
+    }
+    .num h3{
+        margin-left: 17px;
+        font-size: 0.9em;
+      }
+      .num p{
+          margin-left: -90px;
+          font-size: 0.8em;
+      }
+      .fax h3{
+        font-size: 1em;
+    }
+      .fax p{
+        margin-left: -80px;
+    }
+    .mail h3{
+          margin-left: 10px;
+          font-size: 0.9em;
+      }
+    .mail p{
+          font-size: 0.7em;
+      }
+      .form1 .f{
+        font-size: 0.6em;
+
+    }
+      
+}
+@media screen and (max-width: 500px){
+    .form{
+        margin-left: 42px;
+    }
+    .loc h3{
+        margin-left: 10px;
+    }
+    .num h3{
+        margin-left: 10px;
+    }
+    .num p{
+        margin-left: -90px;
+        font-size: 0.7em;
+    }
+    .fax p{
+        margin-left: -90px;
+        font-size: 0.7em;
+        margin-top: 35px
+    }
+    .mail p{
+        margin-top: 35px
+    }
+    .form1 .f{
+        margin-left: 35px;
+
+    }
+}
+@media screen and (max-width: 430px){
+    .quatre{
+        display: none;
+    }
+    .form{
+        width: 30vw;
+        height: 36vh;
+        margin-top: 200px;
+    }
+    .form1{
+        margin-top: -100px;
+    }
+    .form1 h2{
+        font-size: 1.2em;
+        margin-left: -140px;
+    }
+    .form1 .f{
+       width: 35.5vw;
+       margin-left: 0px;
+    }
+}
+@media screen and (max-width: 330px){
+    .form{
+        width: 13vw;
+        height: 45vh;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    .form1 input{
+        font-size: 0.7em;
+    }
+    .form1 h2{
+        font-size: 0.8em;
+        
+    }
+    .form1 .f{
+       width: 36vw;
+       margin-left: 0px;
+    }
+    
+}
 
 @import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
