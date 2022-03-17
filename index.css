@@ -30,12 +30,12 @@ ul{
     background: white;
     margin-left: -15%;
     margin-top: 20%; 
-    width: 90%;
+    width: 110%;
     position: absolute;
 }
 #sousmenu li:hover{
     background-color: rgb(175, 174, 174);
-    width: 81.5%;
+    width: 100%;
     
 }
 #sousmenu li a{
@@ -381,10 +381,10 @@ label{
     .copyright{
         margin-top: 20%;
     }
-}*/
+}
 
 
-/*first*/
+/*first
 
 .first
 {
@@ -592,20 +592,103 @@ strong
          }
 }
 
+/*une*/
+
+.vien{
+   
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(45deg,lightblue,#2c7bfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("JK.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.vien:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #ffff;
+    clip-path: polygon(100% 15%,0 100%,100% 100%);
+}
+.xux{
+   
+    max-width: 900px;
+    text-align: center;
+}
+.xux h2{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 5em;
+}
+.xux p{
+    color: black;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 500px) {
+    .xux h2{
+        font-size: 3em;
+    }
+    .xux p{
+        font-size: 1em;
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    .xux h2{
+        font-size: 3em;
+    }
+    .xux p{
+        font-size: 1em;
+    }
+    
+}
+@media screen and (max-width: 330px) {
+    .xux h2{
+        font-size: 2em;
+    }
+    .xux p{
+        font-size: 0.6em;
+    }
+    
+}
+
+/*cover*/ 
+
+.cover{
+     background: white;
+     margin-top: -20px;
+}
+.cover h2{
+    color: white;
+}
+
 /*service*/
 
 #kl{
-    margin-top: 300px;
+    margin-top: 150px;
     height: 100vh;
     width: 100%;
     display: grid;
     place-items: center;
+}
+.row1 h2{
+    font-size: 5em;
+    font-weight: bold;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 .column{
     width: 400px;
@@ -668,7 +751,22 @@ p{
     color: #f0f0f0;
 
 }
-
+@media screen and (max-width: 430px) {
+    .row1 h2{
+        font-size: 2.5em;
+    }
+    .column{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .row1 h2{
+        font-size: 2em;
+    }
+    .column{
+        width: 250px;
+    }
+}
 
 /*slid*/
 .clear{
@@ -681,7 +779,7 @@ p{
 {
     margin-top: 50px;
 	overflow: hidden;
-	margin-top: 100px;
+	margin-top: 250px;
 	width: 70%;
 	height: 500px;
    
@@ -730,6 +828,21 @@ p{
 		left: -400%;
 	}
 }
+@media screen and (max-width: 1350px){
+    #slid{
+        margin-top: 300px;
+    }
+}
+@media screen and (max-width: 1200px){
+    #slid{
+        margin-top: 600px;
+    }
+}
+@media screen and (max-width: 800px){
+    #slid{
+        margin-top: 1400px;
+    }
+}
 @media screen and (max-width: 430px){
        #slid{
            margin-left: 18px;
@@ -738,30 +851,36 @@ p{
 @media screen and (max-width: 330px){
     #slid{
         margin-left: 0px;
+        margin-top: 1800px;
     }
 }
 
 /*thirst*/
 
+#fir{
+    margin-top: 200px;
+}
 .sus{
     
-    width: 90%;
+    width: 98vw;
+  
 }
 .sus h2
 { 
     background-image: url("images/font.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100px;
-    padding-top: 70px;
+    padding-top: 10px;
     margin-left: 20px;
 	margin-top: 100px;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 4em;
 	color: rgb(87, 78, 209);
 	margin-bottom: 65px;
     text-shadow: 5px 15px 8px rgb(195, 187, 228);
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-
     
 }
 .grille
@@ -803,9 +922,9 @@ p{
 }
 @media screen and (max-width: 1380px){
 	.sus h2{
-        background: #444;
+       
         margin-left: 150px;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 	.grille{
         margin-left: 160px;
@@ -815,15 +934,19 @@ p{
 @media screen and (max-width: 1140px){
     .sus h2{
         margin-left: 110px;
+       
     }
     .grille{
         margin-left: 137px;
     }
 }
 @media screen and (max-width: 955px){
+    .sus{
+        margin-left: -30px;
+    }
     .sus h2{
         margin-left: 93px;
-        background-color: rgb(30, 17, 63);
+       
     }
     .grille{
         margin-left: 119px;
@@ -832,6 +955,9 @@ p{
 @media screen and (max-width: 800px){
     .sus h2{
         margin-left: 77px;
+        font-size: 3em;
+        margin-top: -200px;
+        padding-top: 45px;
     }
     .grille{
         margin-left: 100px;
@@ -839,10 +965,11 @@ p{
 }
 @media screen and (max-width: 650px){
     .sus{
-        margin-top: -80px;
+        margin-top: -300px;
     }
     .sus h2{
         margin-left: 65px;
+        font-size: 2.7em;
     }
     .grille{
         margin-left: 87px;
@@ -851,6 +978,7 @@ p{
 @media screen and (max-width: 600px){
     .sus h2{
         margin-left: 57px;
+        font-size: 2.5em;
     }
     .grille{
         margin-left: 82px;
@@ -858,12 +986,11 @@ p{
 }
 @media screen and (max-width: 500px){
     .sus{
-        margin-top: -170px;
+        margin-top: -300px;
     }
     .sus h2{
         margin-left: 48px;
-        padding-top: 20px;
-        background-color: #444;
+        padding-top: 50px;
     }
     .grille{
         margin-left: 73px;
@@ -872,11 +999,11 @@ p{
 @media screen and (max-width: 430px){
     .sus{
         margin-left: -5px;
-      
+      margin-top: -400px;
     }
     .sus h2{
-       font-size: 1.4em;
-       padding-top: 50px;
+       font-size: 2em;
+       padding-top: 60px;
     }
     .grille{
         margin-left: 67px;
@@ -884,14 +1011,13 @@ p{
 }
 @media screen and (max-width: 330px){
     .sus{
-        margin-top: -350px;
-      
+        margin-top: -500px;
     }
     .sus h2{
         padding-top: 50px;
-       font-size: 1.2em;
+        font-size: 1em;
        background: none;
-       margin-left: 60px;
+       margin-left: 30px;
     }
     .grille{
         margin-left: 75px;
@@ -912,7 +1038,7 @@ p{
 .wrapper
 {
     margin-top: 7%;
-    background-image: url("av2.jpg");
+    background-color:lightblue;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -922,9 +1048,9 @@ p{
    text-align: center;
     font-size: 52px;
     margin-bottom: 60px;
-    color: #8e8b8b;
+    color: black;
     font-family: 'poppins', sans-serif;
-
+    padding-top: 30px;
 }
 .team 
 {
@@ -944,14 +1070,13 @@ p{
     width: 300px;
     padding: 20px;
     line-height: 20px;
-    color: #8e8b8b;
+    color:  black;
     position: relative;
-    opacity: 0.5;
-    box-shadow: 10px 10px 10px 10px rgba(153, 151, 151, 0.2);
+    box-shadow: 10px 10px 10px 12px rgba(153, 151, 151, 0.2);
 }
 .team .team-member h3
 {
-    color: #8e8b8b;
+    color: black;
     font-size: 26px;
     margin-top: 100px;
 }
@@ -964,7 +1089,7 @@ p{
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgb(201, 199, 199);
+    background: white;
    
 }
 .team .team-member .team-img img
@@ -980,6 +1105,12 @@ p{
     margin-top: 10px;
 }
 @media screen and (max-width: 650px){
+    .wrapper{
+        margin-top: 200px;
+    }
+    .wrapper h1{
+        padding-top: 10px;
+    }
     .team{
         display: block;
         margin-left: 140px;
@@ -997,12 +1128,18 @@ p{
     }
 }
 @media screen and (max-width: 430px){
+    .wrapper{
+        margin-top: 100px;
+    }
     .wrapper h1{
         font-size: 1.8em;
     }
     .team{
-        margin-left: 30px;
+        margin-left: 50px;
+        
     }
+   
+    
 }
 @media screen and (max-width: 330px){
     .team{
@@ -1019,7 +1156,7 @@ p{
 
 .lui h2
 {
-	margin-top: 100px;
+	margin-top: 150px;
     width: 90vw;
     text-align: center;
     font-size: 2.5em;
@@ -1145,6 +1282,7 @@ p{
 }
 @media screen and (max-width: 650px){
     .lui{
+        margin-top: 200px;
        margin-left: -25px;
     }
     .avec{
@@ -1214,7 +1352,7 @@ p{
     }
     .content1 p{
         font-size: 1em;
-        width: 200px;
+        width: 300px;
        
     }
     .imgb img{
@@ -1227,6 +1365,7 @@ p{
     .lui{
         width: 10vw;
         margin-left: -38px;
+        margin-top: 100px;
     }
     .lui h2{
        font-size: 1.2em;
@@ -1237,7 +1376,7 @@ p{
     }
     .content1 p{
         font-size: 1em;
-        width: 200px;
+       
         margin-left: 10px;
     }
     .imgb img{
@@ -1289,7 +1428,7 @@ p{
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 10px; 
-}
+}  
 footer{
     background: #333;
     color: #f1f1f1;

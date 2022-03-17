@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -380,6 +381,90 @@ label{
         margin-top: 20%;
     }
 }
+/*une*/
+
+.vien{
+   
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(45deg,lightblue,#2c7bfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vien:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #ffff;
+    clip-path: polygon(100% 15%,0 100%,100% 100%);
+}
+.xux{
+  
+    max-width: 900px;
+    text-align: center;
+}
+.xux h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 5em;
+}
+.xux p{
+    color: #fff;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 600px) {
+    .xux h2{
+        font-size: 2.5em;
+    }
+    .xux p{
+        font-size: 1em;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .xux h2{
+        font-size: 3em;
+    }
+    .xux p{
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .xux h2{
+        font-size: 3em;
+    }
+    .xux p{
+        font-size: 1em;
+    }
+    
+}
+@media screen and (max-width: 330px) {
+    .xux h2{
+        font-size: 2em;
+    }
+    .xux p{
+        font-size: 1em;
+    }
+    
+}
+
+/*cover*/ 
+
+.cover{
+    background: white;
+    margin-top: -20px;
+}
+.cover h2{
+   color: white;
+}
+
 
 /*section*/
 
@@ -387,7 +472,7 @@ section
 {
     background:  url(phone1.jpg);
     height: 95vh;
-    margin-top: 70px;
+    margin-top: 150px;
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -608,11 +693,17 @@ section
 }
 @media screen and (max-width: 1180px){
     .form{
-        margin-left: 240px;
+        margin-left: 210px;
     }
     .form1 h2{
         margin-left: -70px;
     }
+    
+}
+@media screen and (max-width: 1075px){
+    .form{
+        margin-left: 190px;
+    } 
     
 }
 @media screen and (max-width: 1024px){
@@ -625,6 +716,16 @@ section
     .form1 .f{
         margin-left: 70px;
     } 
+    .quatre{
+        width: 100vw;
+        
+    }
+}
+@media screen and (max-width: 1000px){
+    .quatre{
+        width: 90vw;
+        
+    }
 }
 @media screen and (max-width: 950px){
     .form{
@@ -636,6 +737,10 @@ section
     .form1 .f{
         margin-left: 55px;
     } 
+    .quatre{
+        width: 90vw;
+        
+    }
 }
 @media screen and (max-width: 800px){
     .form{
@@ -717,7 +822,7 @@ section
 }
 @media screen and (max-width: 600px){
     .form{
-        margin-left: 65px;
+        margin-left: 50px;
     }
     .form1 h2{
         font-size: 1em;
@@ -758,6 +863,7 @@ section
         font-size: 0.6em;
 
     }
+    
       
 }
 @media screen and (max-width: 500px){
@@ -828,7 +934,9 @@ section
     }
     
 }
-
+html{
+    scroll-behavior: smooth
+}
 @import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /*

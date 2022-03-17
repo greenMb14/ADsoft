@@ -23,7 +23,7 @@
                     jQuery(function(){
                         $(function () {
                             $(window).scroll(function () {
-                                if ($(this).scrollTop() > 800 ) { 
+                                if ($(this).scrollTop() > 500 ) { 
                                     $('#scrollUp').css('right','40px');
                                 } else { 
                                     $('#scrollUp').removeAttr( 'style' );
@@ -77,7 +77,7 @@
         </div>
     </header>
         
-    <div class="first">
+    <!--<div class="first">
         <h2></h2>
         <script language="javascript">
         const h2= document.querySelector('h2');
@@ -96,11 +96,32 @@
             <input type="submit" value="Envoyer" class="button-3">
             <div class="clear"></div>
          </form>
-    </div>
-    
+    </div>-->
+    <div class="vien">
+        <div class="xux">
+            <h2></h2>
+            <script language="javascript">
+                const h2= document.querySelector('h2');
+                const textTitle='BIENVENUE CHEZ NOUS';
+                let i=0;
+                const interval= setInterval(() =>{
+                    h2.innerHTML+= textTitle[i]
+                    i++
+                    if(i>=textTitle.length){
+                        clearInterval(interval)}
+                }, 150)
+                </script>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Consectetur voluptatem veniam perspiciatis amet sapiente cum laudantium,
+                  fugit qui vero impedit animi velit repellat voluptatibus,
+                   repellendus nulla,
+                 tempora rem necessitatibus temporibus sed voluptatum?</p>
+        </div>
+   </div>
+   <div class="cover"><h2>me</h2></div>
     <div id="kl">
-        <div class="row">
-            <h2 class="section-heading">Nos Services</h2>
+        <div class="row1">
+            <h2 class="section-heading"><u>Nos Services</u></h2>
         </div>
         <div class="row">
             <div class="column">
@@ -227,7 +248,7 @@
         <div class="avec">
             <div class="content1">
                 <h2>Le meilleur sponsoring.</h2>
-                <p>Tout au long de notre parcours depuis la creation nous nous sommes faites un grand cahier de partenaires nationaux et internationaux donc nous ne saurons tous les citer mais nous sommes vraiment tres heureux de travailler avec eux car nous les avons prouver que nous sommes capable de ce que nous les avons promit et nous allons de progres en progres .c'est une grace divine d'avoir un tel honneur d'etre sponsoriser par de si grande structures nous vous remercions du profond de notre coeur et vous promettons une suite meilleur et favorable a nous tous .</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non fugit ipsam rerum illo officiis. Ea quo ipsum odio magni quia voluptatibus a vero unde aliquam, expedita sint, perspiciatis aliquid modi odit autem provident? Tenetur tempora nesciunt quis quaerat laboriosam! Sint inventore nam amet excepturi?</p>
                 </div>
             <div class="imgb">
                 <img src="part9.jpg"/>
@@ -235,10 +256,6 @@
         </div>
     <div class="clear"></div>
     <div class="lou"><h2>Faites Nous Confiance...</h2></div>
-  <div id="scrollUp">
-<a href="#top"><img src="top.png" width="50px" /></a>
-</div>
-<div class="clear"></div>
     <footer>
         <div class="footer">
                 <div class="grid-items">
@@ -292,10 +309,12 @@
         </div>
         <div class="copyright">
             <p>&copy; copyright</p>
-        </div>
-        
-            
+        </div>     
 </footer>
+<div id="scrollUp">
+    <a href="#top"><img src="top.png" width="50px" /></a>
+    </div>
+   
 
 
 
