@@ -248,7 +248,7 @@ header{
 
 
 .banner{
-    background: url("images/depositphotos_45975093-stock-photo-portfolio-word-on-blackboard.jpg") no-repeat;
+    background: url("images/smartphone-6265046.jpg") no-repeat;
     width: 100%;
     padding-top: 31.5%;
     padding-bottom: 20%;
@@ -665,8 +665,12 @@ label{
 /* bouton up */
 #scrollUp
         {
+        
         position: fixed;
         bottom : 10px;
-        right: -100px;
+        margin-left: 92%;
         opacity: 0.8;
         }
+html{
+    scroll-behavior: smooth;
+}

@@ -697,3 +697,15 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+#scrollUp
+        {
+        
+        position: fixed;
+        bottom : 10px;
+        margin-left: 92%;
+        opacity: 0.8;
+        }
+html{
+    scroll-behavior: smooth;
+}
