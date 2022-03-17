@@ -578,11 +578,15 @@ label{
 /* bouton up */
 #scrollUp
         {
+        
         position: fixed;
         bottom : 10px;
-        right: -100px;
+        margin-left: 92%;
         opacity: 0.8;
         }
+html{
+    scroll-behavior: smooth;
+}
 
 
         /*vbnm*/
@@ -684,13 +688,13 @@ label{
             height: 585px;
             background: transparent;
             filter: saturate(100%);
-        }
+        }*/
         /*image position*/
-        #slider-span1:target~.image-slider{left: 70%;}
+        /* #slider-span1:target~.image-slider{left: 70%;}
         #slider-span2:target~.image-slider{left: 50%;}
-        #slider-span3:target~.image-slider{left: 25%;}
+        #slider-span3:target~.image-slider{left: 25%;} */
         /* #slider-span4:target~.image-slider{left: 70%;}
         #slider-span5:target~.image-slider{left: 70%;} */
-        #slider-span6:target~.image-slider{left: -25%;}
+        /* #slider-span6:target~.image-slider{left: -25%;}
         #slider-span7:target~.image-slider{left: -50%;}
-        #slider-span8:target~.image-slider{left: -70%;} */
+        #slider-span8:target~.image-slider{left: -70%;}  */

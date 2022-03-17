@@ -636,8 +636,12 @@ label{
 /* bouton up */
 #scrollUp
         {
+        
         position: fixed;
         bottom : 10px;
-        right: -100px;
+        margin-left: 92%;
         opacity: 0.8;
         }
+html{
+    scroll-behavior: smooth;
+}

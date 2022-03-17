@@ -69,7 +69,7 @@ function change() {
     jQuery(function(){
         $(function () {
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 200 ) { 
+                if ($(this).scrollTop() > 500 ) { 
                     $('#scrollUp').css('right','40px');
                 } else { 
                     $('#scrollUp').removeAttr( 'style' );
