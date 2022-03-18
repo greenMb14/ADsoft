@@ -678,7 +678,11 @@ strong
 .cover h2{
     color: white;
 }
-
+@media screen and (max-width: 380px){
+    .cover{
+        margin-top: -24px;
+    }
+}
 /*service*/
 
 #kl{
@@ -863,6 +867,11 @@ p{
            margin-left: 18px;
        }
 }
+@media screen and (max-width: 380px){
+    #slid{
+        margin-top: 1700px;
+    }
+}
 @media screen and (max-width: 330px){
     #slid{
         margin-left: 0px;
@@ -1005,7 +1014,7 @@ p{
     }
     .sus h2{
         margin-left: 48px;
-        padding-top: 50px;
+        padding-top: 20px;
     }
     .grille{
         margin-left: 73px;
@@ -1024,6 +1033,17 @@ p{
         margin-left: 67px;
     }
 }
+@media screen and (max-width: 380px){
+    .sus{
+        margin-left: -5px;
+      margin-top: -400px;
+    }
+    .sus h2{
+       font-size: 2em;
+       padding-top: 30px;
+    }
+    
+
 @media screen and (max-width: 330px){
     .sus{
         margin-top: -500px;
@@ -1054,9 +1074,7 @@ p{
 {
     margin-top: 7%;
     background-color:lightblue;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
 }
 .wrapper h1
 {
@@ -1153,17 +1171,19 @@ p{
         margin-left: 50px;
         
     }
-   
-    
 }
+@media screen and (max-width: 380px){
+    .team{
+        margin-left: 33px;
+    }
+}  
 @media screen and (max-width: 330px){
     .team{
         margin-left: 20px;
     }
-    .team .team-member
-{
+    .team .team-member{
     width: 180px;
-}
+     }
 }
 
 
@@ -1198,7 +1218,7 @@ p{
     margin-left: 50px;
 	padding-right: 140px;
 	margin-top: 20px;
-	color: rgb(21, 21, 70)
+	color: rgb(21, 21, 70);
 	
 }
 
@@ -1376,6 +1396,14 @@ p{
     }
     
 }
+@media screen and (max-width: 380px){
+    .lui{
+        margin-left: -33px;
+    }
+    .imgb img{
+        margin-left: 5px;
+    }
+}
 @media screen and (max-width: 330px){
     .lui{
         width: 10vw;
@@ -1443,13 +1471,14 @@ p{
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 10px; 
-}  
+}
 footer{
     background: #333;
     color: #f1f1f1;
     opacity: 0.8;
     animation: couleur 5s infinite;
 }
+
 
 .grid-items, .grid-items1, .grid-items2{
     width: 300px;
@@ -1536,4 +1565,5 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 }

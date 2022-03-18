@@ -464,8 +464,17 @@ label{
 .cover h2{
    color: white;
 }
-
-
+@media screen and (max-width: 380px){
+    .cover{
+        margin-top: -24px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .cover{
+        margin-top: -30px;
+        height: 50px;
+    }
+}
 /*section*/
 
 section
@@ -708,7 +717,7 @@ section
 }
 @media screen and (max-width: 1024px){
     .form{
-        margin-left: 180px;
+        margin-left: 200px;
     }
     .form1 h2{
         margin-left: -100px;
@@ -718,8 +727,11 @@ section
     } 
     .quatre{
         width: 100vw;
-        
     }
+    .loc p{
+        font-size: 0.8em;
+    }
+
 }
 @media screen and (max-width: 1000px){
     .quatre{
@@ -729,7 +741,7 @@ section
 }
 @media screen and (max-width: 950px){
     .form{
-        margin-left: 155px;
+        margin-left: 170px;
     }
     .form1 h2{
         margin-left: -120px;
@@ -740,6 +752,11 @@ section
     .quatre{
         width: 90vw;
         
+    }
+}
+@media screen and (max-width: 830px){
+    .form{
+        margin-left: 140px;
     }
 }
 @media screen and (max-width: 800px){
@@ -822,7 +839,7 @@ section
 }
 @media screen and (max-width: 600px){
     .form{
-        margin-left: 50px;
+        margin-left: 75px;
     }
     .form1 h2{
         font-size: 1em;
@@ -901,6 +918,7 @@ section
         width: 30vw;
         height: 36vh;
         margin-top: 200px;
+        margin-left: 44px;
     }
     .form1{
         margin-top: -100px;
@@ -914,12 +932,17 @@ section
        margin-left: 0px;
     }
 }
+@media screen and (max-width: 380px){
+     .form{
+        margin-left: 30px;
+     }
+}
 @media screen and (max-width: 330px){
     .form{
         width: 13vw;
         height: 45vh;
         margin-top: 100px;
-        margin-left: 20px;
+        margin-left: 23px;
     }
     .form1 input{
         font-size: 0.7em;
