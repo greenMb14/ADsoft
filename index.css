@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -1042,7 +1042,7 @@ p{
        font-size: 2em;
        padding-top: 30px;
     }
-    
+}  
 
 @media screen and (max-width: 330px){
     .sus{
@@ -1092,7 +1092,7 @@ p{
     text-align:  center;
     width: auto;
     flex-wrap: wrap;
-    
+    margin-top: -20px;
 }
 .team .team-member
 {
@@ -1141,7 +1141,7 @@ p{
     .wrapper{
         margin-top: 200px;
     }
-    .wrapper h1{
+    .wrapper h1{ 
         padding-top: 10px;
     }
     .team{
@@ -1185,8 +1185,6 @@ p{
     width: 180px;
      }
 }
-
-
 /*marquee*/
 
 .lui h2
@@ -1460,6 +1458,7 @@ p{
      scroll-behavior: smooth;
  }
 
+ 
 /*footer*/
 
 .footer{
@@ -1566,4 +1565,11 @@ footer{
     justify-content: center;
     align-items: center;
 }
-}
+
+
+
+
+
+
+
+
