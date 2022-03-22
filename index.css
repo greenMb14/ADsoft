@@ -683,6 +683,11 @@ strong
         margin-top: -24px;
     }
 }
+@media screen and (max-width: 600px){
+    .cover{
+        margin-top: -24px;
+    }
+}
 /*service*/
 
 #kl{
@@ -857,7 +862,17 @@ p{
         margin-top: 600px;
     }
 }
+@media screen and (max-width: 950px){
+    #slid{
+        margin-top: 200px;
+    }
+}
 @media screen and (max-width: 800px){
+    #slid{
+        margin-top: 1200px;
+    }
+}
+@media screen and (max-width: 600px){
     #slid{
         margin-top: 1400px;
     }
@@ -865,11 +880,12 @@ p{
 @media screen and (max-width: 430px){
        #slid{
            margin-left: 18px;
+           margin-top: 1500px;
        }
 }
 @media screen and (max-width: 380px){
     #slid{
-        margin-top: 1700px;
+        margin-top: 1600px;
     }
 }
 @media screen and (max-width: 330px){
@@ -1027,7 +1043,7 @@ p{
     }
     .sus h2{
        font-size: 2em;
-       padding-top: 60px;
+       padding-top: 30px;
     }
     .grille{
         margin-left: 67px;
@@ -1039,7 +1055,7 @@ p{
       margin-top: -400px;
     }
     .sus h2{
-       font-size: 2em;
+       font-size: 1.5em;
        padding-top: 30px;
     }
 }  
