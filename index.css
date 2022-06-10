@@ -384,14 +384,15 @@ label{
 }
 
 
-/*first
+/*first*/
 
 .first
 {
 	background-image: url("jk.jpg");
-	height: 700px;
+	height: 800px;
 	background-size: cover;
 	background-repeat: no-repeat;
+    background-position: center;
 }
 .first h2
 {
@@ -404,6 +405,7 @@ label{
     text-align: center;
     font-size: 1.7em;
     padding-top: 30px;
+    color: black;
 }
 form
 {
@@ -592,7 +594,7 @@ strong
          }
 }
 
-/*une*/
+/*une
 
 .vien{
    
@@ -1467,8 +1469,7 @@ p{
     }
 }
 
-/*button*/
-
+/*button-up*/
 
  html{
      scroll-behavior: smooth;

@@ -387,7 +387,7 @@ label{
    
     width: 100%;
     height: 90vh;
-    background: linear-gradient(45deg,lightblue,#2c7bfe);
+    background: linear-gradient(45deg,lightblue ,#2c7bfe);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,10 +520,10 @@ section
     width: 33vw;
     line-height: 35px;
     padding-left: 10px;
-    border-color: white;
+    border: none;
     display: block;
     margin-top: 20px;
-    border-radius: 5px;
+   
 }
 .form1 textarea
 {
@@ -532,7 +532,7 @@ section
     padding-left: 10px;
     border-color: white;
     margin-top: 20px;
-    border-radius: 10px;
+   
 }
 .form1 .f
 {
@@ -541,10 +541,9 @@ section
     margin-left: 100px;
     font-size: 1em;
     color: #0b073f;
-    border-color: white;
+    border: none;
     background-color: white;
-    border-radius: 5px;
-    transition: 1s;
+   
 }
 .quatre
 {
@@ -620,7 +619,7 @@ section
 }
 .fax h3
 {
-   margin-top: 20px;
+   padding-top: 20px;
    margin-left: -20px;
    color: black;
 }
